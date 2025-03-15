@@ -182,12 +182,70 @@
                             <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/hoodie-models.png" alt="model" width="365" height="201">
                         </picture>
                     </div>
+                    <style>
+                        .cs-card-group {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                            gap: 20px;
+                        }
+                    
+                        .cs-card-group .cs-link {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            text-decoration: none;
+                            color: inherit;
+                        }
+                    
+                        .cs-image-group {
+                            position: relative;
+                            overflow: hidden;
+                        }
+                    
+                        .cs-image-group img {
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+                    
+                        .cs-details {
+                            padding: 10px;
+                            background-color: #fff;
+                            flex-grow: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                    
+                        .cs-offer {
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            background-color: #f00;
+                            color: #fff;
+                            padding: 3px 6px;
+                            border-radius: 4px;
+                            font-size: 0.8rem;
+                        }
+                    
+                        .cs-flex {
+                            display: flex;
+                            gap: 10px;
+                            align-items: baseline;
+                        }
+                    
+                        .cs-old-price {
+                            text-decoration: line-through;
+                            color: gray;
+                            font-size: 0.9rem;
+                        }
+                    </style>
                     <div tg-section-id="TGsection_featured-item-tile">
                         <ul class="cs-card-group">
                             <li tg-import-type= "listing">
                                 <a href="" class="cs-link">
                                     <div class="cs-image-group">
-                                        <img tg-attribute = "photo" loading="lazy" decoding="async" alt="alpaca crewneck">
+                                        <img tg-attribute = "photo" loading="lazy" decoding="async">
                                         <span class="cs-offer">-20%</span>
                                     </div>
                                     <div class="cs-details">
