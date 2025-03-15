@@ -185,8 +185,21 @@
                     <style>
                         .cs-card-group {
                             display: grid;
-                            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                            grid-template-columns: repeat(3, 1fr);
                             gap: 20px;
+                        }
+                    
+                        /* For mobile responsiveness */
+                        @media (max-width: 768px) {
+                            .cs-card-group {
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                        }
+                        
+                        @media (max-width: 480px) {
+                            .cs-card-group {
+                                grid-template-columns: 1fr;
+                            }
                         }
                     
                         .cs-card-group .cs-link {
@@ -280,7 +293,7 @@
                                 An online multi-vendor marketplace dedicated to connecting local community members with the best services and products around them. Our mission is to make it easier for you to discover and support local businesses, artisans, and service providers, all while strengthening the ties within your community.
                             </p>
                             <p class="cs-text">
-                                Whether you're looking for unique handmade products, professional services, or everyday essentials, our platform brings everything to your fingertips. With a wide range of local vendors, you can shop with confidence, knowing you’re helping to support your neighbors and foster economic growth within your community.
+                                Whether you're looking for unique handmade products, professional services, or everyday essentials, our platform brings everything to your fingertips. With a wide range of local vendors, you can shop with confidence, knowing you're helping to support your neighbors and foster economic growth within your community.
                             </p>
                             <p class="cs-text">
                                 We believe in the power of local businesses and the impact they have on the places we live. Join us today, and start supporting your community while enjoying convenient, reliable, and personalized service.
@@ -292,19 +305,19 @@
                                 </li>
                                 <li class="cs-li">
                                     <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
-                                    You’ll learn something new
+                                    You'll learn something new
                                 </li>
                                 <li class="cs-li">
                                     <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
-                                    You’ll find the help useful
+                                    You'll find the help useful
                                 </li>
                                 <li class="cs-li">
                                     <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
-                                    You’ll gain confidence
+                                    You'll gain confidence
                                 </li>
                                 <li class="cs-li">
                                     <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
-                                    You’ll have unlimited support
+                                    You'll have unlimited support
                                 </li>
                             </ul> -->
                         </div>
