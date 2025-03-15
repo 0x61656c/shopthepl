@@ -26,6 +26,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="app_body_container">
         <!-- ============================================ -->
         <!--                 Navigation                   -->
         <!-- ============================================ -->
@@ -51,35 +52,33 @@
                             <img class="cs-social-icon" src="https://0x61656c.github.io/shopthepl/media/instagram.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
                         </a>
                     </div>
-                </a>
-                <div class="cs-middle">
-                    <!--Top Bar-->
-                    <div class="cs-top-bar">
-                        <div class="cs-top-social">
-                            <a href="" class="cs-social-link">
-                                <img class="cs-social-icon" src="https://0x61656c.github.io/shopthepl/media/facebook.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
-                            </a>
-                            <a href="" class="cs-social-link">
-                                <img class="cs-social-icon" src="https://0x61656c.github.io/shopthepl/media/instagram.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
-                            </a>
+                    <ul class="cs-location">
+                        <li class="cs-item cs-remove">
+                            <img class="cs-icon" src="https://0x61656c.github.io/shopthepl/media/location.png" alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                            Ventura County & Beyond
+                        </li>
+                        <li class="cs-item">
+                            <a href="mailto:hello@shopthepl.com" style="color: inherit; text-decoration: none;">hello@shopthepl.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cs-bottom-bar">
+                    <a href="" class="cs-logo cs-mobile" aria-label="back to home">
+                        <div class="cs-logo-wrapper">
+                            <!--Default Logo-->
+                            <img class="cs-default" src="https://0x61656c.github.io/shopthepl/media/blue-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                            <!--Dark Mode Logo-->
+                            <img class="cs-dark" src="https://0x61656c.github.io/shopthepl/media/blue-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
                         </div>
-                        <ul class="cs-location">
-                            <li class="cs-item cs-remove">
-                                <img class="cs-icon" src="https://0x61656c.github.io/shopthepl/media/location.png" alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
-                                Ventura County & Beyond
-                            </li>
-                            <li class="cs-item">
-                                <a href="mailto:hello@shopthepl.com" style="color: inherit; text-decoration: none;">hello@shopthepl.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cs-bottom-bar">
-                        <a href="" class="cs-logo cs-mobile" aria-label="back to home">
-                            <div class="cs-logo-wrapper">
-                                <!--Default Logo-->
-                                <img class="cs-default" src="https://0x61656c.github.io/shopthepl/media/blue-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-                                <!--Dark Mode Logo-->
-                                <img class="cs-dark" src="https://0x61656c.github.io/shopthepl/media/blue-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                    </a>
+                    <!--Navigation List-->
+                    <nav class="cs-nav" role="navigation">
+                        <!--Mobile Nav Toggle-->
+                        <button class="cs-toggle" aria-label="mobile menu toggle">
+                            <div class="cs-box" aria-hidden="true">
+                                <span class="cs-line cs-line1" aria-hidden="true"></span>
+                                <span class="cs-line cs-line2" aria-hidden="true"></span>
+                                <span class="cs-line cs-line3" aria-hidden="true"></span>
                             </div>
                         </button>
                         <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
@@ -120,51 +119,52 @@
                                     </ul>
                                 </li>
 
-                                    <li class="cs-li">
-                                        <a href="#about" class="cs-li-link">
-                                            About
-                                        </a>
-                                    </li>
-                                    <li class="cs-li">
-                                        <a href="" class="cs-li-link">
-                                            FAQ
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                       <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                            <li class="cs-li cs-dropdown" tabindex="0">
-                                <span class="cs-li-link">
-                                    Vendor Account
-                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg" alt="dropdown icon" width="24" height="24" decoding="async" aria-hidden="true">
-                                </span>
-                                <ul class="cs-drop-ul">
-                                    <li class="cs-drop-li">
-                                        <a href="https://shop-the-pl.tangram.co/my_transactions" class="cs-li-link cs-drop-link">Transactions</a>
-                                    </li>
-                                    <li class="cs-drop-li">
-                                        <a href="https://shop-the-pl.tangram.co/listings" class="cs-li-link cs-drop-link">Listings</a>
-                                    </li>
-                                    <li class="cs-drop-li">
-                                        <a href="https://shop-the-pl.tangram.co/my_chat" class="cs-li-link cs-drop-link">Messages</a>
-                                    </li>
-                                    <li class="cs-drop-li">
-                                        <a href="https://shop-the-pl.tangram.co/edit_profile" class="cs-li-link cs-drop-link">Profile</a>
-                                    </li>
-                                    <li class="cs-drop-li">
-                                        <a href="https://shop-the-pl.tangram.co/logout" class="cs-li-link cs-drop-link">Logout</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-                        <button id="dark-mode-toggle" aria-label="dark mode toggle">
-                            <img class="cs-moon" aria-hidden="true" src="https://0x61656c.github.io/shopthepl/media/moon.png" decoding="async" alt="moon" width="" height="15">
-                            <img class="cs-sun" aria-hidden="true" src="https://0x61656c.github.io/shopthepl/media/sun.png" decoding="async" alt="sun" width="15" height="15">
-                        </button>
-                    </div>
+                                <li class="cs-li">
+                                    <a href="#about" class="cs-li-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="cs-li">
+                                    <a href="" class="cs-li-link">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <!-- Vendor Account dropdown -->
+                                <li class="cs-li cs-dropdown" tabindex="0">
+                                    <span class="cs-li-link">
+                                        Vendor Account
+                                        <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg" alt="dropdown icon" width="24" height="24" decoding="async" aria-hidden="true">
+                                    </span>
+                                    <ul class="cs-drop-ul">
+                                        <li class="cs-drop-li">
+                                            <a href="https://shop-the-pl.tangram.co/my_transactions" class="cs-li-link cs-drop-link">Transactions</a>
+                                        </li>
+                                        <li class="cs-drop-li">
+                                            <a href="https://shop-the-pl.tangram.co/listings" class="cs-li-link cs-drop-link">Listings</a>
+                                        </li>
+                                        <li class="cs-drop-li">
+                                            <a href="https://shop-the-pl.tangram.co/my_chat" class="cs-li-link cs-drop-link">Messages</a>
+                                        </li>
+                                        <li class="cs-drop-li">
+                                            <a href="https://shop-the-pl.tangram.co/edit_profile" class="cs-li-link cs-drop-link">Profile</a>
+                                        </li>
+                                        <li class="cs-drop-li">
+                                            <a href="https://shop-the-pl.tangram.co/logout" class="cs-li-link cs-drop-link">Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                
+                    <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+                    <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                        <img class="cs-moon" aria-hidden="true" src="https://0x61656c.github.io/shopthepl/media/moon.png" decoding="async" alt="moon" width="" height="15">
+                        <img class="cs-sun" aria-hidden="true" src="https://0x61656c.github.io/shopthepl/media/sun.png" decoding="async" alt="sun" width="15" height="15">
+                    </button>
                 </div>
-            </header>
+            </div>
+        </header>
         </div>
         <script src="https://0x61656c.github.io/shopthepl/js/main.js"></script> 
         <script src="https://0x61656c.github.io/shopthepl/js/dark.js"></script>                        
