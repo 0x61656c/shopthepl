@@ -27,37 +27,37 @@ body {
   box-sizing: border-box;
 }
 .cs-topper {
-  font-size: var(--topperFontSize);
+  font-size: clamp(0.8125rem, 1.6vw, 1rem);
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: inherit;
   letter-spacing: .1em;
   font-weight: 700;
-  color: var(--primary);
+  color: #0c5c92;
   margin-bottom: 0.25rem;
   display: block;
 }
 
 .cs-title {
-  font-size: var(--headerFontSize);
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
   font-weight: 900;
   line-height: 1.2em;
   text-align: inherit;
   max-width: 43.75rem;
   margin: 0 0 1rem 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   position: relative;
   font-family: 'MuseoModerno', sans-serif;
 }
 
 .cs-text {
-  font-size: var(--bodyFontSize);
+  font-size: 1rem;
   line-height: 1.5em;
   text-align: inherit;
   width: 100%;
   max-width: 40.625rem;
   margin: 0;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
 }
 
 
@@ -88,7 +88,7 @@ body.dark-mode h6,
 body.dark-mode .cs-title,
 body.dark-mode .cs-text,
 body.dark-mode .cs-li {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode .light {
   display: none;
@@ -194,7 +194,7 @@ body.cs-open {
   transition: transform 0.3s, background-color 0.3s;
 }
 #cs-navigation.cs-active .cs-link {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 #cs-navigation.cs-active .cs-ul-wrapper {
   opacity: 1;
@@ -315,7 +315,7 @@ body.cs-open {
   text-align: inherit;
   text-decoration: none;
   margin: 0;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
   display: block;
   transition: color 0.3s;
 }
@@ -515,7 +515,7 @@ body.cs-open {
   line-height: 1.5em;
   font-weight: 700;
   margin: 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   display: block;
 }
 #cs-navigation .cs-nav {
@@ -565,14 +565,14 @@ body.cs-open {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   display: block;
   position: relative;
   transition: color 0.3s;
 }
 #cs-navigation .cs-li-link.cs-active,
 #cs-navigation .cs-li-link:hover {
-  color: var(--primary);
+  color: #0c5c92;
 }
 #cs-navigation .cs-nav-button {
   display: none;
@@ -584,7 +584,7 @@ body.dark-mode #cs-navigation {
   background-color: var(--dark);
 }
 body.dark-mode #cs-navigation.cs-active .cs-picture {
-  background-color: var(--primaryLight);
+  background-color: #cfecff;
 }
 body.dark-mode #cs-navigation .cs-default {
   transform: rotateX(180deg);
@@ -615,10 +615,10 @@ body.dark-mode #cs-navigation .cs-button-icon {
 body.dark-mode #cs-navigation .cs-link,
 body.dark-mode #cs-navigation .cs-header,
 body.dark-mode #cs-navigation .cs-link-content {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #cs-navigation .cs-toggle {
-  background-color: var(--primaryLight);
+  background-color: #cfecff;
 }
 body.dark-mode #cs-navigation .cs-line {
   color: #1a1a1a;
@@ -642,10 +642,10 @@ body.dark-mode #cs-navigation .cs-ul-wrapper:before {
   left: 0;
 }
 body.dark-mode #cs-navigation .cs-li-link {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #cs-navigation .cs-li-link.cs-active {
-  color: var(--primary);
+  color: #0c5c92;
 }
 }
 
@@ -727,7 +727,7 @@ body.dark-mode #cs-navigation .cs-li-link.cs-active {
   line-height: 1.2em;
   text-decoration: none;
   margin: 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   display: inline-block;
   position: relative;
 }
@@ -761,7 +761,7 @@ body.dark-mode #cs-navigation .cs-li-link.cs-active {
 }
 #cs-navigation .cs-dropdown {
   position: relative;
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
   height: auto;
@@ -790,7 +790,7 @@ body.dark-mode #cs-navigation .cs-li-link.cs-active {
   height: 0;
   margin: 0 auto;
   padding: 0;
-  background-color: var(--primary);
+  background-color: #0c5c92;
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
@@ -841,7 +841,7 @@ body.dark-mode #cs-navigation .cs-li-link.cs-active {
   opacity: 0;
   visibility: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
-  border-bottom: 5px solid var(--primary);
+  border-bottom: 5px solid #0c5c92;
   /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
   position: absolute;
   top: 100%;
@@ -857,7 +857,7 @@ body.dark-mode #cs-navigation .cs-li-link.cs-active {
   opacity: 0;
   width: 100%;
   height: auto;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
   display: block;
   transform: translateY(-10/16rem);
   transition: opacity 0.6s, transform 0.6s;
@@ -889,7 +889,7 @@ body.dark-mode #cs-navigation .cs-li-link.cs-active {
   padding: 0.75rem;
   /* prevents padding from affecting height and width */
   box-sizing: border-box;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
   display: block;
   transition: color 0.3s, background-color 0.3s;
 }
@@ -979,7 +979,7 @@ body.dark-mode #cs-navigation .cs-drop-icon {
   max-height: 7.5rem;
   box-sizing: border-box;
   /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-  object-fit: cover;
+  object-fit: contain;
   transition: max-height 0.3s, opacity 0.3s, transform 0.6s;
 }
 #cs-navigation .cs-logo-wrapper {
@@ -1059,7 +1059,7 @@ body.dark-mode #cs-navigation .cs-drop-icon {
   transition: background-color 0.3s;
 }
 #cs-navigation .cs-social-link:hover {
-  background-color: var(--primary);
+  background-color: #0c5c92;
 }
 #cs-navigation .cs-social-icon {
   width: 0.75rem;
@@ -1105,7 +1105,7 @@ body.dark-mode #cs-navigation .cs-drop-icon {
   text-align: inherit;
   text-decoration: none;
   margin: 0;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
   display: block;
   transition: color 0.3s;
 }
@@ -1191,7 +1191,7 @@ body.dark-mode #cs-navigation .cs-drop-icon {
   line-height: 1.5em;
   font-weight: 700;
   margin: 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   display: block;
 }
 #cs-navigation .cs-nav-button,
@@ -1221,8 +1221,8 @@ body.dark-mode #cs-navigation .cs-drop-icon {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 1.75rem;
-  color: var(--headerColor);
-  border: 1px solid var(--headerColor);
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1230,7 +1230,7 @@ body.dark-mode #cs-navigation .cs-drop-icon {
   transition: color 0.3s, background-color 0.3s;
 }
 #cs-navigation .cs-button-border:hover {
-  background-color: var(--headerColor);
+  background-color: #1a1a1a;
   color: #fff;
 }
 #cs-navigation .cs-button-border:hover .cs-icon {
@@ -1283,10 +1283,10 @@ body.dark-mode #cs-navigation .cs-header,
 body.dark-mode #cs-navigation .cs-li-link,
 body.dark-mode #cs-navigation .cs-item,
 body.dark-mode #cs-navigation .cs-link-content {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #cs-navigation .cs-li-link:before {
-  background-color: var(--primaryLight);
+  background-color: #cfecff;
 }
 body.dark-mode #cs-navigation .cs-button-border {
   border-color: #fff;
@@ -1294,7 +1294,7 @@ body.dark-mode #cs-navigation .cs-button-border {
 }
 body.dark-mode #cs-navigation .cs-button-border:hover {
   background-color: #fff;
-  color: var(--headerColor);
+  color: #1a1a1a;
 }
 body.dark-mode #cs-navigation .cs-button-border:hover .cs-icon {
   filter: grayscale(0) brightness(100%);
@@ -1311,7 +1311,7 @@ body.dark-mode #cs-navigation .cs-icon {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 #landing {
-  padding: var(--sectionPadding);
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   /* 150px - 250px - leaving extra space for the navigation */
   padding-top: clamp(9.375rem, 25.95vw, 15.625rem);
   position: relative;
@@ -1363,7 +1363,7 @@ body.dark-mode #cs-navigation .cs-icon {
   text-align: inherit;
   max-width: 20ch;
   margin: 0 0 1rem 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   position: relative;
 }
 #landing .cs-text {
@@ -1374,7 +1374,7 @@ body.dark-mode #cs-navigation .cs-icon {
   width: 100%;
   /* 28px - 40px */
   margin: 0 0 clamp(1.75rem, 4vw, 2.5rem) 0;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
 }
 #landing .cs-button-solid {
   font-size: 1rem;
@@ -1386,7 +1386,7 @@ body.dark-mode #cs-navigation .cs-icon {
   margin: 0;
   color: #fff;
   padding: 0 2rem;
-  background-color: var(--primary);
+  background-color: #0c5c92;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -1406,7 +1406,7 @@ body.dark-mode #cs-navigation .cs-icon {
   transition: width .3s;
 }
 #landing .cs-button-solid:hover {
-  color: var(--primary);
+  color: #0c5c92;
 }
 #landing .cs-button-solid:hover:before {
   width: 100%;
@@ -1495,7 +1495,7 @@ body.dark-mode #cs-navigation .cs-icon {
   max-width: 100%;
   height: auto;
   max-height: 20.0625em;
-  object-fit: cover;
+  object-fit: contain;
 }
 #landing .cs-h3 {
   /* 31px - 39px */
@@ -1506,7 +1506,7 @@ body.dark-mode #cs-navigation .cs-icon {
   margin: 0 0 1.75rem 0;
   /* prevents padding and border from affecting height and width */
   box-sizing: border-box;
-  color: var(--headerColor);
+  color: #1a1a1a;
 }
 #landing .cs-link {
   font-size: 1rem;
@@ -1514,7 +1514,7 @@ body.dark-mode #cs-navigation .cs-icon {
   text-align: inherit;
   line-height: 1.2em;
   font-weight: 700;
-  color: var(--primary);
+  color: #0c5c92;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1528,7 +1528,7 @@ body.dark-mode #cs-navigation .cs-icon {
   content: '';
   width: 0%;
   height: 1px;
-  background: var(--primary);
+  background: #0c5c92;
   opacity: 1;
   position: absolute;
   display: block;
@@ -1573,7 +1573,7 @@ body.dark-mode #cs-navigation .cs-icon {
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
 body.dark-mode #landing .cs-h3 {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #landing .cs-item2:before {
   background-color: #000;
@@ -1592,7 +1592,7 @@ body.dark-mode #landing .cs-item3:before {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 #top-services {
-  padding: var(--sectionPadding);
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   position: relative;
   z-index: 1;
 }
@@ -1619,7 +1619,7 @@ body.dark-mode #landing .cs-item3:before {
   margin: 0;
 }
 #top-services .cs-topper {
-  color: var(--secondary);
+  color: #1F6506;
 }
 #top-services .cs-card-group {
   list-style: none;
@@ -1686,7 +1686,7 @@ body.dark-mode #landing .cs-item3:before {
   /* blurred background - done as a pseudo element so backdrop-filter won't distort the text */
 }
 #top-services .cs-category:hover {
-  color: var(--headerColor);
+  color: #1a1a1a;
 }
 #top-services .cs-category:hover:before {
   background-color: #ffffff;
@@ -1723,10 +1723,10 @@ body.dark-mode #top-services {
   background-color: var(--dark);
 }
 body.dark-mode #top-services .cs-title {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #top-services .cs-topper {
-  color: var(--primaryLight)
+  color: #cfecff
 }
 }                          
                               
@@ -1737,7 +1737,7 @@ body.dark-mode #top-services .cs-topper {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 #featured {
-  padding: var(--sectionPadding);
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 #featured .cs-container {
   width: 100%;
@@ -1775,7 +1775,7 @@ body.dark-mode #top-services .cs-topper {
   box-sizing: border-box;
   padding: 0 1.5rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: #0c5c92;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -1863,7 +1863,7 @@ body.dark-mode #top-services .cs-topper {
   margin-bottom: 0.5rem;
   padding: 0.25rem 0.5rem;
   color: #f7f7f7;
-  background-color: var(--secondary);
+  background-color: #1F6506;
   display: block;
 }
 #featured .cs-h3 {
@@ -1872,12 +1872,12 @@ body.dark-mode #top-services .cs-topper {
   line-height: 1.2em;
   max-width: 20ch;
   margin: 0 0 0.25rem;
-  color: var(--headerColor);
+  color: #1a1a1a;
 }
 #featured .cs-item-text {
   font-size: 1rem;
   line-height: 1.5em;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
   display: block;
 }
 #featured .cs-background {
@@ -1917,7 +1917,7 @@ body.dark-mode #top-services .cs-topper {
 #featured .cs-picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   transform: scale(1);
   transition: transform 0.3s;
@@ -1929,7 +1929,7 @@ body.dark-mode #top-services .cs-topper {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   padding: 0.375rem;
-  color: var(--primaryLight);
+  color: #cfecff;
   background: var(--dark);
   position: absolute;
   top: 0.75rem;
@@ -1940,7 +1940,7 @@ body.dark-mode #top-services .cs-topper {
   font-weight: 700;
   line-height: 1.2em;
   margin: 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
 }
 #featured .cs-wrapper {
   margin-top: 0.25rem;
@@ -1952,7 +1952,7 @@ body.dark-mode #top-services .cs-topper {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2em;
-  color: var(--primary);
+  color: #0c5c92;
 }
 #featured .cs-old-price {
   font-size: 1rem;
@@ -2036,7 +2036,7 @@ body.dark-mode #featured .cs-title,
 body.dark-mode #featured .cs-product,
 body.dark-mode #featured .cs-price,
 body.dark-mode #featured .cs-old-price {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #featured .cs-item {
   border-color: rgba(255, 255, 255, 0.2);
@@ -2103,7 +2103,7 @@ body.dark-mode #featured .cs-picture {
   box-sizing: border-box;
   padding: 0 1.5rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: #0c5c92;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -2144,11 +2144,11 @@ body.dark-mode #featured .cs-picture {
   gap: 0.75rem;
 }
 #cs-about .cs-li {
-  font-size: var(--bodyFontSize);
+  font-size: 1rem;
   list-style: none;
   line-height: 1.5em;
   width: 100%;
-  color: var(--bodyTextColor);
+  color: #4e4b66;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -2199,7 +2199,7 @@ body.dark-mode #featured .cs-picture {
 body.dark-mode #cs-about .cs-title,
 body.dark-mode #cs-about .cs-text,
 body.dark-mode #cs-about .cs-li {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
 }
 body.dark-mode #cs-about .cs-text,
 body.dark-mode #cs-about .cs-li {
@@ -2209,7 +2209,7 @@ body.dark-mode #cs-about .cs-button-solid:before {
   background-color: white;
 }
 body.dark-mode #cs-about .cs-button-solid {
-  background-color: var(--primaryLight);
+  background-color: #cfecff;
   color: black;
 }
 body.dark-mode #cs-about .cs-topper {
@@ -2225,9 +2225,9 @@ body.dark-mode #cs-about .cs-topper {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 #cta {
-  padding: var(--sectionPadding);
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   padding-bottom: 0;
-  background-color: var(--primaryLight);
+  background-color: #cfecff;
   position: relative;
   z-index: 1;
 }
@@ -2278,21 +2278,21 @@ body.dark-mode #cs-about .cs-topper {
   line-height: 1.5em;
   font-weight: 700;
   margin: 0 0 0.5rem;
-  color: var(--headerColor);
+  color: #1a1a1a;
 }
 #cta .cs-link {
   font-size: 1rem;
   line-height: 1.5em;
   text-decoration: none;
   margin: 0;
-  color: var(--headerColor);
+  color: #1a1a1a;
   display: flex;
   gap: 0.5rem;
   align-items: center;
   transition: color 0.3s;
 }
 #cta .cs-link:hover {
-  color: var(--primary);
+  color: #0c5c92;
 }
 }
 /* Tablet - 768px */
@@ -2328,9 +2328,9 @@ body.dark-mode #cta .cs-wrapper {
 /* Mobile */
 @media only screen and (min-width: 0rem) {
 #footer {
-  padding: var(--sectionPadding);
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   padding-bottom: 1.5rem;
-  background-color: var(--primary);
+  background-color: #0c5c92;
   overflow: hidden;
 }
 #footer .cs-container {
@@ -2356,7 +2356,7 @@ body.dark-mode #cta .cs-wrapper {
   height: auto;
 }
 #footer .cs-text {
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
   opacity: 0.8;
 }
 #footer .cs-ul-group {
@@ -2383,7 +2383,7 @@ body.dark-mode #cta .cs-wrapper {
   font-weight: 700;
   line-height: 1.2em;
   margin: 0 0 1rem;
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
   display: block;
   grid-column: span 2;
 }
@@ -2393,12 +2393,12 @@ body.dark-mode #cta .cs-wrapper {
 #footer .cs-link,
 #footer .cs-copyright {
   text-decoration: none;
-  color: var(--bodyTextColorWhite);
+  color: #fafbfc;
   opacity: 0.8;
   transition: color 0.3s;
 }
 #footer .cs-link:hover {
-  color: var(--primary);
+  color: #0c5c92;
 }
 #footer .cs-subscribe-group {
   display: flex;
@@ -2429,8 +2429,8 @@ body.dark-mode #cta .cs-wrapper {
   min-width: 9.375rem;
   margin: 0;
   padding: 0 1rem;
-  background-color: var(--primary);
-  color: var(--bodyTextColorWhite);
+  background-color: #0c5c92;
+  color: #fafbfc;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -2439,7 +2439,7 @@ body.dark-mode #cta .cs-wrapper {
   content: "";
   width: 0%;
   height: 100%;
-  background: var(--primary);
+  background: #0c5c92;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -2456,7 +2456,7 @@ body.dark-mode #cta .cs-wrapper {
   border: none;
 }
 #footer .cs-button-solid:before {
-  background-color: var(--secondary);
+  background-color: #1F6506;
 }
 #footer .cs-button-solid:hover {
   cursor: pointer;
@@ -2491,7 +2491,7 @@ body.dark-mode #cta .cs-wrapper {
 #footer .cs-divider {
   width: 1px;
   height: 0.8125rem;
-  background-color: var(--bodyTextColorWhite);
+  background-color: #fafbfc;
   opacity: 0.8;
   display: block;
 }
