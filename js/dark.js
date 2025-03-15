@@ -4,11 +4,11 @@
 
 // helper functions to toggle dark mode
 function enableDarkMode() {
-	document.body.classList.add('dark-mode');
+	document.getElementById('app_body_container').classList.add('dark-mode');
 	localStorage.setItem('theme', 'dark');
 }
 function disableDarkMode() {
-	document.body.classList.remove('dark-mode');
+	document.getElementById('app_body_container').classList.remove('dark-mode');
 	localStorage.setItem('theme', 'light');
 }
 
