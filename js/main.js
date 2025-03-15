@@ -1,12 +1,13 @@
 // add classes for mobile navigation toggling
 var CSbody = document.querySelector("body");
+var CSappBodyContainer = document.querySelector("#app_body_container");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
 const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 
 CShamburgerMenu.addEventListener('click', function() {
     CShamburgerMenu.classList.toggle("cs-active");
     CSnavbarMenu.classList.toggle("cs-active");
-    CSbody.classList.toggle("cs-open");
+    CSappBodyContainer.classList.toggle("cs-open");
     // run the function to check the aria-expanded value
     ariaExpanded();
 });
