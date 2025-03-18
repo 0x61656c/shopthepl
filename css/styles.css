@@ -1957,7 +1957,7 @@ body.cs-open {
   letter-spacing: 1.3px;
   padding: 0.375rem;
   color: #cfecff;
-  background: var(--dark);
+  background: transparent;
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
