@@ -200,25 +200,6 @@
       min-height: 42.5rem;
     }
   }
-  /* Dark Mode */
-  @media only screen and (min-width: 0rem) {
-    .dark-mode #item {
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-    .dark-mode #item .cs-title,
-    .dark-mode #item .cs-text-large,
-    .dark-mode #item .cs-text,
-    .dark-mode #item .cs-h3,
-    .dark-mode #item .cs-rating-text,
-    .dark-mode #item .cs-desc,
-    .dark-mode #item .cs-topper {
-      color: #fafbfc;
-    }
-    .dark-mode #item .cs-text,
-    .dark-mode #item .cs-rating-text {
-      opacity: 0.8;
-    }
-  }
-                             
+                   
   
   
