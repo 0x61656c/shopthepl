@@ -1356,6 +1356,7 @@ body.cs-open {
   #top-services {
     padding: var(--sectionPadding);
     position: relative;
+    padding-top: 0;
   }
   #top-services .cs-container {
     width: 100%;
