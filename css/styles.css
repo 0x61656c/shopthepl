@@ -1088,7 +1088,7 @@ body.cs-open {
 #landing {
   padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   /* 150px - 250px - leaving extra space for the navigation */
-  padding-top: clamp(9.375rem, 25.95vw, 15.625rem);
+  padding-top: clamp(9.375rem, 25.95vw, 12.625rem);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1804,6 +1804,9 @@ body.cs-open {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+#about {
+  padding: var(--sectionPadding);
+}
 #cs-about {
   width: 100%;
   max-width: 80rem;
