@@ -1093,6 +1093,13 @@ body.cs-open {
   z-index: 1;
   overflow: hidden;
 }
+
+#landing .banner {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
 #landing .cs-container {
   width: 100%;
   /* changes to 1720px at desktop */
@@ -1344,6 +1351,7 @@ body.cs-open {
 }
 #landing .cs-item1 {
   grid-row: span 2;
+  
 }
 }
 /* Testing Services */
