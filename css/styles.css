@@ -1078,7 +1078,218 @@ body.cs-open {
 }
 }
 
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
 
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1951 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1951 .cs-container {
+    width: 100%;
+    /* changes to 1280px on desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #hero-1951 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #hero-1951 .cs-title {
+    /* 31px - 61px */
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+  }
+  #hero-1951 .cs-text {
+    margin-bottom: 1.25rem;
+  }
+  #hero-1951 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 clamp(2rem, 4vw, 3rem);
+    background-color: var(--primary);
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1951 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #hero-1951 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #hero-1951 .cs-reviews {
+    text-align: center;
+    margin-top: clamp(2.5rem, 5vw, 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #hero-1951 .cs-reviews-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #hero-1951 .cs-reviews-img {
+    width: 3rem;
+    height: auto;
+    margin: 0 -1rem 0 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  #hero-1951 .cs-reviews-number {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-1951 .cs-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  #hero-1951 .cs-rating {
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #hero-1951 .cs-rating-icon {
+    width: 1rem;
+    height: auto;
+    margin: 0 0.25rem;
+  }
+  #hero-1951 .cs-reviews-text {
+    font-size: clamp(0.875rem, 1.75vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #hero-1951 .cs-image-group {
+    font-size: min(2.3vw, 1rem);
+    width: 39.375em;
+    height: 43.125em;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1951 .cs-picture {
+    width: 19.0625em;
+    height: 37.5em;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 37.5em;
+    display: block;
+    position: absolute;
+    top: 0.75em;
+    left: 0;
+    z-index: 1;
+  }
+  #hero-1951 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #hero-1951 .cs-icon {
+    width: 12.6875em;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 13.125em;
+  }
+  #hero-1951 .cs-right {
+    bottom: 0;
+    top: auto;
+    left: auto;
+    right: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-1951 .cs-reviews {
+    text-align: left;
+    flex-direction: row;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-1951 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #hero-1951 .cs-content {
+    text-align: left;
+    /* 48px - 80px */
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    align-items: flex-start;
+    align-self: center;
+  }
+  #hero-1951 .cs-image-group {
+    font-size: min(1.12vw, 1rem);
+    height: auto;
+    min-height: 43.125em;
+    flex: none;
+  }
+  #hero-1951 .cs-left {
+    height: auto;
+    top: 0.75em;
+    bottom: 4.875em;
+  }
+  #hero-1951 .cs-right {
+    height: auto;
+    top: 5.625em;
+    bottom: 0em;
+  }
+}
+                                
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
