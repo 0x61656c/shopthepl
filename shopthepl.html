@@ -10,7 +10,9 @@
         <link rel="canonical" href="https://shopthepl.com">
         <title>Shop The PL</title> 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/styles.css?q=1" />
+        <!-- <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/styles.css?q=1" /> -->
+        <link rel="stylesheet" href="css/styles.css">
+
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
         <!-- MuseoModerno Font -->
@@ -65,6 +67,57 @@
         <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
     </section>
 
+            <!-- ============================================ -->
+        <!--            Collection Featured               -->
+        <!-- ============================================ -->
+
+        <section id="featured">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="cs-title">Featured Collection</h2>
+                    <a href="" class="cs-button-solid">View All Collections</a>
+                </div>
+                <div class="cs-collection-wrapper">
+                    <div class="cs-item-offer">
+                        <div class="cs-text-wrapper">
+                            <!-- <span class="cs-offer-tag">ONLY $20</span> -->
+                            <h3 class="cs-h3">Latest Products</h3>
+                            <span class="cs-item-text">Check out the new products lists!</span>
+                            <a class="cs-button-solid" href="/">Shop Now</a>
+                        </div>
+                        <picture class="cs-background" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="https://0x61656c.github.io/shopthepl/media/shopping.jpg">
+                            <source media="(min-width: 601px)" srcset="https://0x61656c.github.io/shopthepl/media/shopping.jpg">
+                            <img loading="lazy" decoding="async" src="https://0x61656c.github.io/shopthepl/media/shopping.jpg" alt="model" width="365" height="201">
+                        </picture>
+                    </div>
+                    <ul class="cs-card-group" tg-section-id = "TGsection_featured-item-tile">
+                        <li class="cs-item" tg-import-type = "listing">
+                            <a tg-attribute = "link" href="/listings/{listing_id}" class="cs-link">
+                                <div class="cs-image-group">
+                                    <picture class="cs-picture">
+                                        <img loading="lazy" decoding="async" tg-attribute = "photo" alt="product image" width="1280" height="568">
+                                    </picture>
+                                    <a class="cs-offer" tg-attribute="link" href="https://shop-the-pl.tangram.co/listings/{listing_id}/add_to_collection/11abcccf4078bf7dcb57"><img src="https://0x61656c.github.io/shopthepl/media/blueheart.png" width="30"></a>
+                                </div>
+                                <div class="cs-details">
+                                    <h3 class="cs-product" tg-attribute = "title"></h3>
+                                    <div class="cs-wrapper">
+                                        <div class="cs-flex">
+                                            <span class="cs-price" tg-attribute = "TGfield_price_number-field"></span>
+                                            <span class="cs-old-price"></span>
+                                            <br><span class="cs-text" tg-attribute = "TGfield_about_text-area"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
 <!-- ============================================ -->
 <!--                   Services                   -->
 <!-- ============================================ -->
@@ -73,13 +126,11 @@
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex-group">
-                <span class="cs-topper">Our Services</span>
+                <span class="cs-topper">Shop the PL</span>
                 <h2 class="cs-title">How It Works</h2>
             </div>
             <p class="cs-text">
-                We can help you design your project and develop a comprehensive plan to ensure that it meets your
-                specific needs and requirements. Our team of architects and engineers will work closely with you to
-                create a design that is both functional and aesthetically pleasing.
+                Using technology to highlight independent people, products, services, talent, and so much more. Shop the PL offers an option for sellers and service providers to get connected with buyers who want to support independent. Break up with Corporations and support the local economy by finding and independent. 
             </p>
         </div>
         <ul class="cs-card-group">
@@ -96,10 +147,10 @@
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">01</span>
-                        Planning
+                        We Find Independent
                     </h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Shop the PL brings people, products, and services together across various categories and industries.                    
                     </p>
                 </a>
             </li>
@@ -116,10 +167,10 @@
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">02</span>
-                        Design
+                        Shop & Schedule
                     </h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Find Products & Services all in one place. Find your new favorite brands and services.
                     </p>
                 </a>
             </li>
@@ -136,10 +187,10 @@
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">03</span>
-                        Pre Construction
+                        Safe Checkout
                     </h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Our platform offers cart functionality so you can support multiple vendors with a single transaction.
                     </p>
                 </a>
             </li>
@@ -156,18 +207,15 @@
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">04</span>
-                        Start Working
+                        Post Purchase
                     </h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Buyers receive their products or services directly from sellers. Sellers are paid out based on pay out schedule. 
                     </p>
                 </a>
             </li>
         </ul>
     </div>
-    <picture class="cs-background">
-        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves2-crop.svg" alt="waves">
-    </picture>
 </section>
                                 
 
@@ -308,81 +356,7 @@
 </section>
                                      
 
-        <!-- ============================================ -->
-        <!--            Collection Featured               -->
-        <!-- ============================================ -->
 
-        <section id="featured">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <h2 class="cs-title">Featured Collection</h2>
-                    <a href="" class="cs-button-solid">View All Collection</a>
-                </div>
-                <div class="cs-collection-wrapper">
-                    <div class="cs-item-offer">
-                        <div class="cs-text-wrapper">
-                            <!-- <span class="cs-offer-tag">ONLY $20</span> -->
-                            <h3 class="cs-h3">Latest Products</h3>
-                            <span class="cs-item-text">Check out the new products lists!</span>
-                            <a class="cs-button-solid" href="/">Shop Now</a>
-                        </div>
-                        <picture class="cs-background" aria-hidden="true">
-                            <source media="(max-width: 600px)" srcset="https://0x61656c.github.io/shopthepl/media/shopping.jpg">
-                            <source media="(min-width: 601px)" srcset="https://0x61656c.github.io/shopthepl/media/shopping.jpg">
-                            <img loading="lazy" decoding="async" src="https://0x61656c.github.io/shopthepl/media/shopping.jpg" alt="model" width="365" height="201">
-                        </picture>
-                    </div>
-                    <ul class="cs-card-group" tg-section-id = "TGsection_featured-item-tile">
-                        <li class="cs-item" tg-import-type = "listing">
-                            <a tg-attribute = "link" href="/listings/{listing_id}" class="cs-link">
-                                <div class="cs-image-group">
-                                    <picture class="cs-picture">
-                                        <img loading="lazy" decoding="async" tg-attribute = "photo" alt="product image" width="1280" height="568">
-                                    </picture>
-                                    <a class="cs-offer" tg-attribute="link" href="https://shop-the-pl.tangram.co/listings/{listing_id}/add_to_collection/11abcccf4078bf7dcb57"><img src="https://0x61656c.github.io/shopthepl/media/blueheart.png" width="30"></a>
-                                </div>
-                                <div class="cs-details">
-                                    <h3 class="cs-product" tg-attribute = "title"></h3>
-                                    <div class="cs-wrapper">
-                                        <div class="cs-flex">
-                                            <span class="cs-price" tg-attribute = "TGfield_price_number-field"></span>
-                                            <span class="cs-old-price"></span>
-                                            <br><span class="cs-text" tg-attribute = "TGfield_about_text-area"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="cs-container">
-                <div id="cs-about">
-                    <div class="cs-content">
-                        <div class="cs-flex-wrapper">
-                            <div class="cs-flex">
-                                <span class="cs-topper">About</span>
-                                <h2 class="cs-title">Welcome to <br>Shop the PL</h2>
-                            </div>
-                            <a href="" class="cs-button-solid">Become a Vendor</a>
-                        </div>
-                        <div class="cs-wrapper">
-                            <p class="cs-text">
-                                An online multi-vendor marketplace dedicated to connecting community members with the best services and products around them. Our mission is to make it easier for you to discover and support independent businesses, artisans, and service providers, all while strengthening the ties within your community.
-                            </p>
-                            <p class="cs-text">
-                                Whether you're looking for unique handmade products, professional services, or everyday essentials, our platform brings everything to your fingertips. With a wide range of local vendors, you can shop with confidence, knowing you’re helping to support your neighbors and foster economic growth within your community.
-                            </p>
-                            <p class="cs-text">
-                                We believe in the power of independent businesses, service providers, creators, talent & more, and the impact they have in the spaces we live. Start supporting community that supports community while enjoying convenient, reliable, and personalized service.
-                            </p>                    
-                        </div>
-                    </div>
-                </div>
-            </div>                       
-        </section>
         <!-- ============================================ -->
         <!--                Call To Action                -->
         <!-- ============================================ -->
@@ -423,7 +397,32 @@
                 <span>Contact Form & FAQ to be added here</pan>
             </div>
         </section>
-
+        <section id="about">
+            <div class="cs-container">
+                <div id="cs-about">
+                    <div class="cs-content">
+                        <div class="cs-flex-wrapper">
+                            <div class="cs-flex">
+                                <span class="cs-topper">About</span>
+                                <h2 class="cs-title">Welcome to <br>Shop the PL</h2>
+                            </div>
+                            <a href="" class="cs-button-solid">Become a Vendor</a>
+                        </div>
+                        <div class="cs-wrapper">
+                            <p class="cs-text">
+                                An online multi-vendor marketplace dedicated to connecting community members with the best services and products around them. Our mission is to make it easier for you to discover and support independent businesses, artisans, and service providers, all while strengthening the ties within your community.
+                            </p>
+                            <p class="cs-text">
+                                Whether you're looking for unique handmade products, professional services, or everyday essentials, our platform brings everything to your fingertips. With a wide range of local vendors, you can shop with confidence, knowing you’re helping to support your neighbors and foster economic growth within your community.
+                            </p>
+                            <p class="cs-text">
+                                We believe in the power of independent businesses, service providers, creators, talent & more, and the impact they have in the spaces we live. Start supporting community that supports community while enjoying convenient, reliable, and personalized service.
+                            </p>                    
+                        </div>
+                    </div>
+                </div>
+            </div>                       
+        </section>
         <!-- ============================================ -->
         <!--                   Footer                     -->
         <!-- ============================================ -->

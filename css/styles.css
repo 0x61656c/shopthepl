@@ -1292,7 +1292,7 @@ body.cs-open {
 
 
 /*-- -------------------------- -->
-<---         Services           -->
+<---       How it works         -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -1358,7 +1358,7 @@ body.cs-open {
   #steps-1290 .cs-item:hover .cs-h3 {
     color: var(--primaryLight);
   }
-  #steps-1290 .cs-item::after {
+  /* #steps-1290 .cs-item::after {
     content: "";
     width: 1.25rem;
     height: 5rem;
@@ -1377,7 +1377,7 @@ body.cs-open {
   }
   #steps-1290 .cs-item:last-of-type::after {
     display: none;
-  }
+  } */
   #steps-1290 .cs-link {
     text-decoration: none;
     display: block;
