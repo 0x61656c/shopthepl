@@ -1315,11 +1315,11 @@ body.cs-open {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps-1290 {
+  #howitworks {
     padding: var(--sectionPadding);
     position: relative;
   }
-  #steps-1290 .cs-container {
+  #howitworks .cs-container {
     /* changes to 1440px at tablet */
     max-width: 34.375rem;
     width: 100%;
@@ -1330,14 +1330,14 @@ body.cs-open {
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #steps-1290 .cs-content {
+  #howitworks .cs-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     /* set text align to center if content needs to be centrally aligned */
     text-align: left;
   }
-  #steps-1290 .cs-text {
+  #howitworks .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     max-width: 21.875rem;
@@ -1346,10 +1346,10 @@ body.cs-open {
     color: var(--bodyTextColor);
     text-align: inherit;
   }
-  #steps-1290 .cs-text {
+  #howitworks .cs-text {
     max-width: 39.375rem;
   }
-  #steps-1290 .cs-card-group {
+  #howitworks .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1358,7 +1358,7 @@ body.cs-open {
     /* 16px - 20px */
     gap: clamp(1rem, 2vw, 1.25rem);
   }
-  #steps-1290 .cs-item {
+  #howitworks .cs-item {
     list-style: none;
     background-color: #fff;
     grid-column: span 12;
@@ -1366,22 +1366,22 @@ body.cs-open {
     z-index: 1;
     transition: box-shadow 0.3s, transform 0.3s;
   }
-  #steps-1290 .cs-item:hover {
+  #howitworks .cs-item:hover {
     transform: translateY(-0.4375rem);
   }
-  #steps-1290 .cs-item:hover .cs-picture img {
+  #howitworks .cs-item:hover .cs-picture img {
     opacity: 0.3;
     transform: scale(1.1);
   }
-  #steps-1290 .cs-item:hover .cs-h3 {
+  #howitworks .cs-item:hover .cs-h3 {
     color: var(--primaryLight);
   }
 
-  #steps-1290 .cs-link {
+  #howitworks .cs-link {
     text-decoration: none;
     display: block;
   }
-  #steps-1290 .cs-picture {
+  #howitworks .cs-picture {
     width: 100%;
     height: 9.375rem;
     margin: 0 0 0.75rem 0;
@@ -1393,7 +1393,7 @@ body.cs-open {
     /* clips the img tag corners */
     overflow: hidden;
   }
-  #steps-1290 .cs-picture img {
+  #howitworks .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1402,7 +1402,7 @@ body.cs-open {
     left: 0;
     transition: transform 0.6s, opacity 0.3s;
   }
-  #steps-1290 .cs-number {
+  #howitworks .cs-number {
     font-size: 1.25rem;
     font-weight: bold;
     width: 2.25rem;
@@ -1418,7 +1418,7 @@ body.cs-open {
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #steps-1290 .cs-h3 {
+  #howitworks .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.2vw, 1.5625rem);
     line-height: 1.2em;
@@ -1432,14 +1432,14 @@ body.cs-open {
     gap: 0.75rem;
     transition: color 0.3s;
   }
-  #steps-1290 .cs-item-text {
+  #howitworks .cs-item-text {
     /* 14px - 16px  */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #steps-1290 .cs-background {
+  #howitworks .cs-background {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -1448,7 +1448,7 @@ body.cs-open {
     width: 100%;
     opacity: 0.5;
   }
-  #steps-1290 .cs-background img {
+  #howitworks .cs-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1459,19 +1459,19 @@ body.cs-open {
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #steps-1290 .cs-container {
+  #howitworks .cs-container {
     max-width: 90rem;
     gap: 6.25rem;
   }
-  #steps-1290 .cs-content {
+  #howitworks .cs-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  #steps-1290 .cs-item {
+  #howitworks .cs-item {
     grid-column: span 3;
   }
-  #steps-1290 .cs-item::after {
+  #howitworks .cs-item::after {
     width: 7.5rem;
     height: 1.75rem;
     margin: 0;
@@ -1480,11 +1480,11 @@ body.cs-open {
     bottom: -2.5rem;
     left: clamp(8.5rem, 18vw, 18.5rem);
   }
-  #steps-1290 .cs-item:nth-of-type(2)::after {
+  #howitworks .cs-item:nth-of-type(2)::after {
     top: -3.75rem;
     transform: rotateX(180deg);
   }
-  #steps-1290 .cs-background {
+  #howitworks .cs-background {
     top: 0;
     left: auto;
     right: 50%;
