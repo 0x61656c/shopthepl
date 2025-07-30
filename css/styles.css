@@ -1680,6 +1680,7 @@ body.cs-open {
   background-color: #f6f6f6;
   display: block;
   overflow: hidden;
+  padding: 15px;
 }
 #featured .cs-picture img {
   width: 100%;
