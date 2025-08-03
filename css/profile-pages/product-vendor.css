@@ -7,7 +7,7 @@
   #product-vendor {
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
-    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    padding: clamp(7.25rem, 16.82vw, 13.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
     background-color: #f7f7f7;
     /* clips the svg wave from overflowing */
     overflow: hidden;
@@ -23,6 +23,7 @@
     align-items: center;
     flex-direction: column;
     gap: 3rem;
+    margin-top:160px;
   }
   #product-vendor .cs-content {
     max-width: 39.375rem;
@@ -144,6 +145,7 @@
   #product-vendor .cs-container {
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 90px;
   }
   #product-vendor .cs-content {
     width: 40vw;
