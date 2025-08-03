@@ -172,10 +172,10 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #collection-1602 {
+  #all-products {
     padding: var(--sectionPadding);
   }
-  #collection-1602 .cs-container {
+  #all-products .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -187,7 +187,7 @@
     position: relative;
     z-index: 1;
   }
-  #collection-1602 .cs-content {
+  #all-products .cs-content {
     text-align: center;
     width: 100%;
     display: flex;
@@ -195,10 +195,10 @@
     align-items: center;
     gap: 1.5rem;
   }
-  #collection-1602 .cs-title {
+  #all-products .cs-title {
     margin: 0;
   }
-  #collection-1602 .cs-button-group {
+  #all-products .cs-button-group {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -206,7 +206,7 @@
     /* 16px - 32px */
     gap: clamp(1rem, 4vw, 2rem);
   }
-  #collection-1602 .cs-button {
+  #all-products .cs-button {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -218,7 +218,7 @@
     position: relative;
     transition: color 0.3s;
   }
-  #collection-1602 .cs-button:before {
+  #all-products .cs-button:before {
     content: "";
     width: 0;
     height: 1px;
@@ -229,25 +229,25 @@
     left: 0;
     transition: width 0.3s;
   }
-  #collection-1602 .cs-button:hover {
+  #all-products .cs-button:hover {
     color: var(--primary);
     cursor: pointer;
   }
-  #collection-1602 .cs-button:hover:before {
+  #all-products .cs-button:hover:before {
     width: 100%;
   }
-  #collection-1602 .cs-button.cs-active {
+  #all-products .cs-button.cs-active {
     color: var(--primary);
   }
-  #collection-1602 .cs-button.cs-active:before {
+  #all-products .cs-button.cs-active:before {
     width: 100%;
   }
-  #collection-1602 .cs-listing-wrapper {
+  #all-products .cs-listing-wrapper {
     width: 100%;
     position: relative;
     z-index: 1;
   }
-  #collection-1602 .cs-listing {
+  #all-products .cs-listing {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -263,7 +263,7 @@
     /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
     transform-origin: left top;
   }
-  #collection-1602 .cs-listing.cs-hidden {
+  #all-products .cs-listing.cs-hidden {
     /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
     opacity: 0;
     /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
@@ -277,16 +277,16 @@
     /* prevents the mouse from interacting with it */
     pointer-events: none;
   }
-  #collection-1602 .cs-listing.cs-hidden .cs-image {
+  #all-products .cs-listing.cs-hidden .cs-image {
     opacity: 0;
     /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
     transform: translateY(2.1875rem) rotateX(90deg);
   }
-  #collection-1602 .cs-listing.cs-hidden .cs-item {
+  #all-products .cs-listing.cs-hidden .cs-item {
     transform: rotateY(180deg);
     opacity: 0;
   }
-  #collection-1602 .cs-item {
+  #all-products .cs-item {
     width: 100%;
     max-width: 23.4375rem;
     /* overwrites the default 'min-width: auto' value, keeping all grid items the same width no matter what*/
@@ -297,62 +297,62 @@
     transform: rotateY(0);
     transition: transform 0.7s, opacity 0.3s;
   }
-  #collection-1602 .cs-item:nth-of-type(1) {
+  #all-products .cs-item:nth-of-type(1) {
     transition-delay: 0.1s;
   }
-  #collection-1602 .cs-item:nth-of-type(2) {
+  #all-products .cs-item:nth-of-type(2) {
     transition-delay: 0.2s;
   }
-  #collection-1602 .cs-item:nth-of-type(3) {
+  #all-products .cs-item:nth-of-type(3) {
     transition-delay: 0.3s;
   }
-  #collection-1602 .cs-item:nth-of-type(4) {
+  #all-products .cs-item:nth-of-type(4) {
     transition-delay: 0.4s;
   }
-  #collection-1602 .cs-item:nth-of-type(5) {
+  #all-products .cs-item:nth-of-type(5) {
     transition-delay: 0.5s;
   }
-  #collection-1602 .cs-item:nth-of-type(6) {
+  #all-products .cs-item:nth-of-type(6) {
     transition-delay: 0.6s;
   }
-  #collection-1602 .cs-item:nth-of-type(7) {
+  #all-products .cs-item:nth-of-type(7) {
     transition-delay: 0.7s;
   }
-  #collection-1602 .cs-item:nth-of-type(8) {
+  #all-products .cs-item:nth-of-type(8) {
     transition-delay: 0.8s;
   }
-  #collection-1602 .cs-item:nth-of-type(9) {
+  #all-products .cs-item:nth-of-type(9) {
     transition-delay: 0.1s;
   }
-  #collection-1602 .cs-item:nth-of-type(10) {
+  #all-products .cs-item:nth-of-type(10) {
     transition-delay: 0.1s;
   }
-  #collection-1602 .cs-item:nth-of-type(11) {
+  #all-products .cs-item:nth-of-type(11) {
     transition-delay: 0.1s;
   }
-  #collection-1602 .cs-item:nth-of-type(12) {
+  #all-products .cs-item:nth-of-type(12) {
     transition-delay: 0.1s;
   }
-  #collection-1602 .cs-link {
+  #all-products .cs-link {
     text-decoration: none;
   }
-  #collection-1602 .cs-link:hover .cs-picture img {
+  #all-products .cs-link:hover .cs-picture img {
     transform: scale(1.1);
   }
-  #collection-1602 .cs-picture-group {
+  #all-products .cs-picture-group {
     width: auto;
     height: 18.75rem;
     margin-bottom: 1.25rem;
     position: relative;
   }
-  #collection-1602 .cs-picture {
+  #all-products .cs-picture {
     width: 100%;
     height: 100%;
     background-color: #f6f6f6;
     overflow: hidden;
     display: block;
   }
-  #collection-1602 .cs-picture img {
+  #all-products .cs-picture img {
     width: 100%;
     height: 100%;
     /* using object-fit contain to keep the entirety of the product image in the frame */
@@ -360,7 +360,7 @@
     object-fit: contain;
     transition: transform 0.6s;
   }
-  #collection-1602 .cs-offer {
+  #all-products .cs-offer {
     font-size: 0.8125rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -368,17 +368,16 @@
     letter-spacing: 1.3px;
     padding: 0.375rem;
     color: #fff;
-    background: #ff4747;
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
   }
-  #collection-1602 .cs-category {
+  #all-products .cs-category {
     font-size: 1rem;
     line-height: 1.5em;
     color: #767676;
   }
-  #collection-1602 .cs-name {
+  #all-products .cs-name {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 1vw, 1.5625rem);
     font-weight: 700;
@@ -390,34 +389,34 @@
     color: var(--headerColor);
     overflow: hidden;
   }
-  #collection-1602 .cs-actions {
+  #all-products .cs-actions {
     margin-top: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #collection-1602 .cs-price {
+  #all-products .cs-price {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
     color: var(--secondary);
   }
-  #collection-1602 .cs-was-price {
+  #all-products .cs-was-price {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.2em;
     text-decoration: line-through;
     color: #767676;
   }
-  #collection-1602 .cs-stars {
+  #all-products .cs-stars {
     margin-top: 0.25rem;
     display: flex;
   }
-  #collection-1602 .cs-star {
+  #all-products .cs-star {
     width: 1.25rem;
     height: 1.25rem;
   }
-  #collection-1602 .cs-buy {
+  #all-products .cs-buy {
     max-height: 2.5rem;
     padding: 0.5rem;
     background: none;
@@ -427,24 +426,23 @@
     justify-content: center;
     align-items: center;
   }
-  #collection-1602 .cs-basket {
+  #all-products .cs-basket {
     width: 1.5rem;
     height: auto;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #collection-1602 .cs-content {
+  #all-products .cs-content {
     flex-direction: row;
-    justify-content: space-between;
   }
-  #collection-1602 .cs-listing {
+  #all-products .cs-listing {
     grid-template-columns: repeat(3, 1fr);
   }
-  #collection-1602 .cs-item {
+  #all-products .cs-item {
     max-width: none;
   }
-  #collection-1602 .cs-picture-group {
+  #all-products .cs-picture-group {
     /* 200px - 320px */
     height: clamp(12.5rem, 23vw, 20rem);
   }
