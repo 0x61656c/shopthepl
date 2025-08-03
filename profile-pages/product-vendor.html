@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/styles.css" />
         <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/item.css" />
         <!-- <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/item.css" /> -->
-        <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/profile-pages/product-vendor.css" />
+        <link rel="stylesheet" href="../css/profile-pages/product-vendor.css" />
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
         <!-- MuseoModerno Font -->
@@ -30,35 +30,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section tg-section-id="TGsection_provider-profile" id="hero-855">
-            <div class="cs-container" tg-import-type = "user">
-                <div class="cs-content">
-                    <h1 class="cs-title" tg-attribute = "TGfield_vendor-name"></h1>
-                    <span class="cs-topper" tg-import-type="review">
-                        <div>
-                            <i class="fa fa-star"><span tg-review-value="rating"></span></i>
-                        </div>
-                        </span>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus unde id saepe quo. Est, ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, provident? Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </p>
-                    <a href="" class="cs-button-solid">Send a Message</a>
-                </div>
-                <!--Hero Image-->
-                <picture class="cs-picture">
-                    <!--Mobile-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-                    <!--Tablet-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-                    <!--Desktop-->
-                    <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-                    <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="therapy" width="570" height="701">
-                    </picture>
-            </div>
-            <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-            <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-            </svg>
+        <section tg-section-id="TGsection_provider-profile">
+            <div tg-import-type = "user"></div>
 
             <!-- <div tg-import-type = "user">
                 <img tg-attribute = "avatar">
@@ -70,10 +43,10 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-855">
+<section id="product-vendor">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title" tg-attribute = "TGfield_vendor-name"></h1>
+            <h1 class="cs-title" >Plantulitas</h1>
             <span class="cs-topper" tg-import-type="review">
                 <div>
                     <i class="fa fa-star"><span tg-review-value="rating"></span></i>
@@ -99,6 +72,77 @@
     <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
     </svg>
+    <div id="collection-1602">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">New Collection</h2>
+                <div class="cs-button-group">
+                    <button class="cs-button" data-filter="one">
+                        New Arrival
+                    </button>
+                    <button class="cs-button" data-filter="two">
+                        Top Rating
+                    </button>
+                    <button class="cs-button" data-filter="three">
+                        Best Seller
+                    </button>
+                </div>
+            </div>
+            <div class="cs-listing-wrapper">
+                <!--Listing 1-->
+                <div class="cs-listing" data-category="one">
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                    <source media="(min-width: 601px)"
+                                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                    <img loading="lazy" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png"
+                                            alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Blue Chunky Beanie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                    alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                    alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                    alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                    alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                    alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img class="cs-basket"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                                alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
                                 
         
@@ -182,5 +226,7 @@
         </footer>             
 
     <script src="https://0x61656c.github.io/shopthepl/js/main.js"></script> 
+    <script src="https://0x61656c.github.io/shopthepl/js/product-vendor.js"></script> 
+
     </body>
 </html>

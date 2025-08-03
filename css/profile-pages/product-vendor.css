@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-855 {
+  #product-vendor {
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
     padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
@@ -14,7 +14,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-855 .cs-container {
+  #product-vendor .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -24,14 +24,14 @@
     flex-direction: column;
     gap: 3rem;
   }
-  #hero-855 .cs-content {
+  #product-vendor .cs-content {
     max-width: 39.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  #hero-855 .cs-topper {
+  #product-vendor .cs-topper {
     font-size: 1rem;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -42,7 +42,7 @@
     margin-bottom: 0.25rem;
     display: block;
   }
-  #hero-855 .cs-title {
+  #product-vendor .cs-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 5vw, 3.8125rem);
     font-weight: 900;
@@ -54,7 +54,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #hero-855 .cs-text {
+  #product-vendor .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     line-height: 1.5em;
@@ -65,7 +65,7 @@
     margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
     color: var(--bodyTextColor);
   }
-  #hero-855 .cs-button-solid {
+  #product-vendor .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -84,7 +84,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #hero-855 .cs-button-solid:before {
+  #product-vendor .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -97,10 +97,10 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #hero-855 .cs-button-solid:hover:before {
+  #product-vendor .cs-button-solid:hover:before {
     width: 100%;
   }
-  #hero-855 .cs-picture {
+  #product-vendor .cs-picture {
     width: 100%;
     max-width: 35.625rem;
     /* 400px - 712px */
@@ -113,7 +113,7 @@
     display: block;
     position: relative;
   }
-  #hero-855 .cs-picture img {
+  #product-vendor .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -124,7 +124,7 @@
     /* ensures the top of the images is at the top of the container, no heads getting cut off */
     object-position: top;
   }
-  #hero-855 .cs-wave {
+  #product-vendor .cs-wave {
     /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
     width: 320%;
     height: auto;
@@ -138,31 +138,315 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #hero-855 {
-    text-align: left;
+  #product-vendor {
+    text-align: center;
   }
-  #hero-855 .cs-container {
-    flex-direction: row;
+  #product-vendor .cs-container {
+    flex-direction: column;
     justify-content: space-between;
   }
-  #hero-855 .cs-content {
+  #product-vendor .cs-content {
     width: 40vw;
     /* prevents flex-box from squishing it */
     flex: none;
-    align-items: flex-start;
   }
-  #hero-855 .cs-title,
-  #hero-855 .cs-text {
+  #product-vendor .cs-title,
+  #product-vendor .cs-text {
     text-align: left;
   }
-  #hero-855 .cs-picture {
+  #product-vendor .cs-picture {
     /* 623px - 814px */
-    height: clamp(38.9375rem, 60vw, 50.875rem);
+    height: clamp(30.9375rem, 30vw, 50.875rem);
   }
-  #hero-855 .cs-wave {
+  #product-vendor .cs-wave {
     width: 100%;
     left: 0;
     transform: none;
+  }
+}
+                                
+
+/*-- -------------------------- -->
+<---        Collection          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #collection-1602 {
+    padding: var(--sectionPadding);
+  }
+  #collection-1602 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #collection-1602 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #collection-1602 .cs-title {
+    margin: 0;
+  }
+  #collection-1602 .cs-button-group {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* 16px - 32px */
+    gap: clamp(1rem, 4vw, 2rem);
+  }
+  #collection-1602 .cs-button {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 0;
+    color: var(--bodyTextColor);
+    background-color: transparent;
+    border: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+  #collection-1602 .cs-button:before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: var(--primary);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #collection-1602 .cs-button:hover {
+    color: var(--primary);
+    cursor: pointer;
+  }
+  #collection-1602 .cs-button:hover:before {
+    width: 100%;
+  }
+  #collection-1602 .cs-button.cs-active {
+    color: var(--primary);
+  }
+  #collection-1602 .cs-button.cs-active:before {
+    width: 100%;
+  }
+  #collection-1602 .cs-listing-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  #collection-1602 .cs-listing {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 700px;
+    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
+    /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
+    transform-origin: left top;
+  }
+  #collection-1602 .cs-listing.cs-hidden {
+    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+    opacity: 0;
+    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+    visibility: hidden;
+    position: absolute;
+    /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the top:0 value, the gallery won't go past that position when it animates */
+    top: 0;
+    left: 0;
+    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+    transform: scaleY(0) scaleX(0);
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+  }
+  #collection-1602 .cs-listing.cs-hidden .cs-image {
+    opacity: 0;
+    /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
+    transform: translateY(2.1875rem) rotateX(90deg);
+  }
+  #collection-1602 .cs-listing.cs-hidden .cs-item {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  #collection-1602 .cs-item {
+    width: 100%;
+    max-width: 23.4375rem;
+    /* overwrites the default 'min-width: auto' value, keeping all grid items the same width no matter what*/
+    min-width: 0;
+    opacity: 1;
+    padding: 1rem;
+    border: 1px solid #e8e8e8;
+    transform: rotateY(0);
+    transition: transform 0.7s, opacity 0.3s;
+  }
+  #collection-1602 .cs-item:nth-of-type(1) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(2) {
+    transition-delay: 0.2s;
+  }
+  #collection-1602 .cs-item:nth-of-type(3) {
+    transition-delay: 0.3s;
+  }
+  #collection-1602 .cs-item:nth-of-type(4) {
+    transition-delay: 0.4s;
+  }
+  #collection-1602 .cs-item:nth-of-type(5) {
+    transition-delay: 0.5s;
+  }
+  #collection-1602 .cs-item:nth-of-type(6) {
+    transition-delay: 0.6s;
+  }
+  #collection-1602 .cs-item:nth-of-type(7) {
+    transition-delay: 0.7s;
+  }
+  #collection-1602 .cs-item:nth-of-type(8) {
+    transition-delay: 0.8s;
+  }
+  #collection-1602 .cs-item:nth-of-type(9) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(10) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(11) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(12) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-link {
+    text-decoration: none;
+  }
+  #collection-1602 .cs-link:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #collection-1602 .cs-picture-group {
+    width: auto;
+    height: 18.75rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+  #collection-1602 .cs-picture {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    display: block;
+  }
+  #collection-1602 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* using object-fit contain to keep the entirety of the product image in the frame */
+    /* feel free to change this to 'cover', or adjust the background-color above if you have consistent backgrounds on your products */
+    object-fit: contain;
+    transition: transform 0.6s;
+  }
+  #collection-1602 .cs-offer {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding: 0.375rem;
+    color: #fff;
+    background: #ff4747;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+  #collection-1602 .cs-category {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #767676;
+  }
+  #collection-1602 .cs-name {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 1vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0;
+    color: var(--headerColor);
+    overflow: hidden;
+  }
+  #collection-1602 .cs-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #collection-1602 .cs-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--secondary);
+  }
+  #collection-1602 .cs-was-price {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-decoration: line-through;
+    color: #767676;
+  }
+  #collection-1602 .cs-stars {
+    margin-top: 0.25rem;
+    display: flex;
+  }
+  #collection-1602 .cs-star {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  #collection-1602 .cs-buy {
+    max-height: 2.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: 2px solid var(--primary);
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #collection-1602 .cs-basket {
+    width: 1.5rem;
+    height: auto;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #collection-1602 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #collection-1602 .cs-listing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #collection-1602 .cs-item {
+    max-width: none;
+  }
+  #collection-1602 .cs-picture-group {
+    /* 200px - 320px */
+    height: clamp(12.5rem, 23vw, 20rem);
   }
 }
                                 
