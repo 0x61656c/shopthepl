@@ -30,71 +30,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-    <!-- ============================================ -->
-    <!--                 Navigation                   -->
-    <!-- ============================================ -->
 
-    <header id="cs-navigation">
-        <div class="cs-container">
-            <!--Nav Logo-->
-            <!--Logo is turned white in the css with a filter on dark mode-->
-            <a href="" class="cs-logo" aria-label="back to home">
-                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/therapy.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-            </a>
-            <!--Navigation List-->
-            <nav class="cs-nav" role="navigation">
-                <!--Mobile Nav Toggle-->
-                <button class="cs-toggle" aria-label="mobile menu toggle">
-                    <div class="cs-box" aria-hidden="true">
-                        <span class="cs-line cs-line1" aria-hidden="true"></span>
-                        <span class="cs-line cs-line2" aria-hidden="true"></span>
-                        <span class="cs-line cs-line3" aria-hidden="true"></span>
-                    </div>
-                </button>
-                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-                <div class="cs-ul-wrapper">
-                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link cs-active">
-                                Home
-                            </a>
-                        </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                About
-                            </a>
-                        </li>
-                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                        <li class="cs-li cs-dropdown" tabindex="0">
-                            <span class="cs-li-link">
-                                Services
-                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                            </span>
-                            <ul class="cs-drop-ul">
-                                <li class="cs-drop-li">
-                                    <a href="" class="cs-li-link cs-drop-link">Registration</a>
-                                </li>
-                                <li class="cs-drop-li">
-                                    <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <a href="" class="cs-button-outline">Get Started</a>
-        </div>
-    </header>
                                 
         <!-- ============================================ -->
         <!--                    Hero                      -->
@@ -102,6 +38,12 @@
 
         <section id="product-vendor" tg-section-id="TGsection_provider-profile">
             <div class="cs-container" tg-import-type = "user">
+                <div class="pv-menu">
+                    <a href="" class="cs-button-solid">All Products</a>
+                    <a href="" class="cs-button-solid">Vendor Details</a>
+                    <a href="" class="cs-button-solid">Ratings</a>
+
+                </div>
                 <div class="cs-content">
                             <!--Hero Image-->
                 <picture class="cs-picture">
@@ -143,8 +85,8 @@
                                                     src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png"
                                                     alt="gallery" width="305" height="400">
                                         </picture>
-                                        <a class="cs-offer" tg-attribute="link" href="https://shop-the-pl.tangram.co/users/{user_id}/add_to_collection/11abcccf4078bf7dcb57"><img src="https://0x61656c.github.io/shopthepl/media/blueheart.png" width="30"></a>
-
+                                        <a class="cs-offer" tg-attribute="link" href="https://shop-the-pl.tangram.co/users/{user_id}/add_to_collection/11abcccf4078bf7dcb57"><img src="https://0x61656c.github.io/shopthepl/media/blueheart.png" width="30"></a> 
+                                        <span>Add to Favorites</span>
                                     </div>
                                     <div class="cs-details">
                                         <span class="cs-category">Run, Dress</span>
