@@ -492,7 +492,7 @@
   #pv-details {
       /* 60px - 130px */
       padding: clamp(3.75rem, 8vw, 8.125rem) 1rem;
-      background-color: var(--secondary);
+      background-color: var(--primary);
   }
   #pv-details .cs-container {
       width: 100%;
