@@ -155,10 +155,7 @@
   #product-vendor .cs-text {
     text-align: left;
   }
-  #product-vendor .cs-picture {
-    /* 623px - 814px */
-    height: clamp(30.9375rem, 30vw, 50.875rem);
-  }
+
   #product-vendor .cs-wave {
     width: 100%;
     left: 0;
