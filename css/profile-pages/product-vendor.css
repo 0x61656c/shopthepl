@@ -166,6 +166,10 @@
 #details {
   margin-top: 35px;
 }
+
+#details h2 {
+  text-align: center;
+}
 .column {
   float: left;
   width: 25%;
