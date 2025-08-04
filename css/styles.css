@@ -79,6 +79,26 @@ body {
   z-index: 1;
 }
 
+.cs-button-small {
+  font-size: 1rem;
+  font-weight: 700;
+  /* 46px - 56px */
+  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  min-width: 9.375rem;
+  margin: 0;
+  margin-top: 2rem;
+  /* prevents padding from adding to the width */
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  color: #fff;
+  background-color: #0c5c92;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
 
 
 
