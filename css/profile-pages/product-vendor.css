@@ -150,6 +150,7 @@
     width: 40vw;
     /* prevents flex-box from squishing it */
     flex: none;
+    margin: auto;
   }
   #product-vendor .cs-title,
   #product-vendor .cs-text {
