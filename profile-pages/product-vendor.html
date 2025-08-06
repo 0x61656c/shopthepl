@@ -60,8 +60,8 @@
             </div>
 
 
-            <div id="all-products" tg-section-id = "TGsection_product-vendor-products">
-                <div class="cs-container" tg-import-type = "listing">
+            <div id="all-products">
+                <div class="cs-container">
                     <div class="cs-content">
                         <h2 class="cs-title">All Products</h2>
                     </div>
@@ -69,19 +69,27 @@
                         <!--Listing 1-->
                         <div class="cs-listing" data-category="one">
                             <div class="cs-item">
-                                <a tg-attribute = "link" href="/listings/{listing_id}" class="cs-link">
+                                <a href="" class="cs-link">
                                     <div class="cs-picture-group">
                                         <picture class="cs-picture">
-                                            <img loading="lazy" decoding="async" tg-attribute = "photo" alt = "product image" width="305" height="400">
+                                            <source media="(max-width: 600px)"
+                                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                            <source media="(min-width: 601px)"
+                                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                            <img loading="lazy" decoding="async"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png"
+                                                    alt="gallery" width="305" height="400">
                                         </picture>
                                         <a class="cs-offer" tg-attribute="link" href="https://shop-the-pl.tangram.co/users/{user_id}/add_to_collection/11abcccf4078bf7dcb57"><img src="https://0x61656c.github.io/shopthepl/media/blueheart.png" width="30"></a> 
+                                        <span>Add to Favorites</span>
                                     </div>
                                     <div class="cs-details">
-                                        <span class="cs-category"></span>
-                                        <h3 class="cs-name" tg-attribute = "title"></h3>
+                                        <span class="cs-category">Run, Dress</span>
+                                        <h3 class="cs-name">Blue Chunky Beanie</h3>
                                         <div class="cs-actions">
                                             <div class="cs-flex">
-                                                <span class="cs-price" tg-attribute = "TGfield_price_number-field"></span>
+                                                <span class="cs-price">$7.00</span>
+
                                             </div>
                                             <div style="text-align: center;">
                                                 <a tg-attribute = "link" href="/listings/{listing_id}/new_transaction"  style="text-align: center; text-decoration: none;
@@ -98,7 +106,8 @@
                     </div>
                 </div>
             </div>
-            <!-- <div id="pv-details" class="cs-container" tg-import-type = "user" style="flex-direction: row;">
+            <div id="pv-details" class="cs-container" tg-import-type = "user" style="flex-direction: row;">
+                <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
                     <div>
                         <img class="cs-logo" src="https://0x61656c.github.io/shopthepl/media/profile-pages/location.png" alt="logo" width="287" height="65" loading="lazy" decoding="async">
                         <p>
@@ -108,7 +117,7 @@
                     <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo2.png" alt="logo" width="229" height="55" loading="lazy" decoding="async">
                     <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo3.png" alt="logo" width="235" height="53" loading="lazy" decoding="async">
                     <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo4.png" alt="logo" width="228" height="61" loading="lazy" decoding="async">
-            </div> -->
+            </div>
 
         </section>
 
