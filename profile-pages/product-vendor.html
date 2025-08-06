@@ -58,8 +58,11 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
                 </svg>
             </div>
-
-
+        </section>
+        <!-- ============================================ -->
+        <!--            Vendor Products                   -->
+        <!-- ============================================ -->
+        <section>
             <div id="all-products">
                 <div class="cs-container">
                     <div class="cs-content">
@@ -67,16 +70,16 @@
                     </div>
                     <div class="cs-listing-wrapper">
                         <!--Listing 1-->
-                        <div class="cs-listing" data-category="one">
-                            <div class="cs-item">
-                                <a href="" class="cs-link">
+                        <div class="cs-listing" data-category="one" tg-section-id = "TGsection_product-vendor-products">
+                            <div class="cs-item" tg-import-type = "listing">
+                                <a tg-attribute = "link" href="/listings/{listing_id}" class="cs-link">
                                     <div class="cs-picture-group">
                                         <picture class="cs-picture">
                                             <source media="(max-width: 600px)"
                                                     srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
                                             <source media="(min-width: 601px)"
                                                     srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
-                                            <img loading="lazy" decoding="async"
+                                            <img loading="lazy" decoding="async" tg-attribute = "photo"
                                                     src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png"
                                                     alt="gallery" width="305" height="400">
                                         </picture>
@@ -84,11 +87,11 @@
                                         <span>Add to Favorites</span>
                                     </div>
                                     <div class="cs-details">
-                                        <span class="cs-category">Run, Dress</span>
-                                        <h3 class="cs-name">Blue Chunky Beanie</h3>
+                                        <span class="cs-category" tg-attribute = "TGfield_new-or-pre-loved-field"></span>
+                                        <h3 class="cs-name" tg-attribute = "TGfield_title_text-field"></h3>
                                         <div class="cs-actions">
                                             <div class="cs-flex">
-                                                <span class="cs-price">$7.00</span>
+                                                <span class="cs-price" tg-attribute = "TGfield_price_number-field"></span>
 
                                             </div>
                                             <div style="text-align: center;">
@@ -106,19 +109,6 @@
                     </div>
                 </div>
             </div>
-            <div id="pv-details" class="cs-container" tg-import-type = "user" style="flex-direction: row;">
-                <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
-                    <div>
-                        <img class="cs-logo" src="https://0x61656c.github.io/shopthepl/media/profile-pages/location.png" alt="logo" width="287" height="65" loading="lazy" decoding="async">
-                        <p>
-                            testing
-                        </p>
-                    </div>
-                    <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo2.png" alt="logo" width="229" height="55" loading="lazy" decoding="async">
-                    <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo3.png" alt="logo" width="235" height="53" loading="lazy" decoding="async">
-                    <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo4.png" alt="logo" width="228" height="61" loading="lazy" decoding="async">
-            </div>
-
         </section>
 
                                 
