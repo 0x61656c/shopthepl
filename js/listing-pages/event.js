@@ -1,8 +1,8 @@
 function togglePlayButton3() {
     // Select all elements with the .cs-video-wrapper class
-    const pictures = document.querySelectorAll('#hero-2154 .cs-video-wrapper');
+    const pictures = document.querySelectorAll('#event-hero .cs-video-wrapper');
     // Select all elements with the .cs-play class
-    const buttons = document.querySelectorAll('#hero-2154 .cs-play');
+    const buttons = document.querySelectorAll('#event-hero .cs-play');
 
     // Add a click event listener to each .cs-video-wrapper element
     pictures.forEach(picture => {
@@ -20,7 +20,7 @@ togglePlayButton3();
 
 function toggleVideoPlayback3() {
     // Select the video element
-    const video = document.querySelector('#hero-2154 video');
+    const video = document.querySelector('#event-hero video');
 
     // Add a click event listener to the video
     video.addEventListener('click', () => {

@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-2154 {
+  #event-hero {
     padding: var(--sectionPadding);
     /* 150px - 200px - top leaving extra space for the navigation */
     /* 40px - 90px bottom */
@@ -14,7 +14,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-2154 .cs-container {
+  #event-hero .cs-container {
     width: 100%;
     max-width: 44rem;
     margin: auto;
@@ -26,7 +26,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-2154 .cs-content {
+  #event-hero .cs-content {
     text-align: center;
     width: 100%;
     display: flex;
@@ -36,31 +36,31 @@
     position: relative;
     z-index: 1;
   }
-  #hero-2154 .cs-flex {
+  #event-hero .cs-flex {
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #hero-2154 .cs-title {
+  #event-hero .cs-title {
     /* 39px - 61px */
     font-size: clamp(2.438rem, 5vw, 3.813rem);
     text-transform: uppercase;
   }
 
-  #hero-2154 .cs-topper {
+  #event-hero .cs-topper {
       font-size: 1.15rem;
   }
-  #hero-2154 .cs-text {
+  #event-hero .cs-text {
     max-width: none;
   }
 
-  #hero-2154 .cs-h3 {
+  #event-hero .cs-h3 {
       font-size: 1.5rem;
   }
 
-  #hero-2154 .event-headline {
+  #event-hero .event-headline {
       font-size: 1.25rem;
   }
-  #hero-2154 .cs-video-group {
+  #event-hero .cs-video-group {
     width: 100%;
     /* 340px - 547px */
     height: clamp(21.25rem, 42.5vw, 34.2rem);
@@ -68,21 +68,21 @@
     position: relative;
     z-index: 1;
   }
-  #hero-2154 .cs-video-wrapper {
+  #event-hero .cs-video-wrapper {
     width: 100%;
     /* changes to 90% at tablet, then back to 100% at desktop */
     height: 100%;
     display: block;
     position: relative;
   }
-  #hero-2154 .cs-video-wrapper:hover {
+  #event-hero .cs-video-wrapper:hover {
     cursor: pointer;
   }
-  #hero-2154 .cs-video-wrapper:hover .cs-play {
+  #event-hero .cs-video-wrapper:hover .cs-play {
     transform: translate(-50%, -50%) scale(1.2);
   }
-  #hero-2154 .cs-video-wrapper video,
-  #hero-2154 .cs-video-wrapper .cs-picture {
+  #event-hero .cs-video-wrapper video,
+  #event-hero .cs-video-wrapper .cs-picture {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -91,8 +91,8 @@
     top: 0;
     left: 0;
   }
-  #hero-2154 .cs-video-wrapper video img,
-  #hero-2154 .cs-video-wrapper .cs-picture img {
+  #event-hero .cs-video-wrapper video img,
+  #event-hero .cs-video-wrapper .cs-picture img {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -101,8 +101,8 @@
     top: 0;
     left: 0;
   }
-  #hero-2154 .cs-video-wrapper video:before,
-  #hero-2154 .cs-video-wrapper .cs-picture:before {
+  #event-hero .cs-video-wrapper video:before,
+  #event-hero .cs-video-wrapper .cs-picture:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -115,7 +115,7 @@
     left: 0;
     z-index: 1;
   }
-  #hero-2154 .cs-play {
+  #event-hero .cs-play {
     /* 80px - 120px */
     width: clamp(5rem, 14vw, 7.5rem);
     height: clamp(5rem, 14vw, 7.5rem);
@@ -134,50 +134,50 @@
     transition: transform 0.3s, opacity 0.3s;
     backdrop-filter: blur(8px);
   }
-  #hero-2154 .cs-play.cs-hide {
+  #event-hero .cs-play.cs-hide {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0) !important;
   }
-  #hero-2154 .cs-icon {
+  #event-hero .cs-icon {
     width: 1.25rem;
     height: auto;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #hero-2154 .cs-container {
+  #event-hero .cs-container {
     max-width: 59rem;
   }
-  #hero-2154 .cs-content {
+  #event-hero .cs-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #hero-2154 .cs-flex {
+  #event-hero .cs-flex {
     width: 100%;
   }
-  #hero-2154 .cs-title {
+  #event-hero .cs-title {
     margin: 0;
     max-width: 100%;
   }
-  /* #hero-2154 .cs-text {
+  /* #event-hero .cs-text {
     max-width: 23.875rem;
   } */
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #hero-2154 .cs-container {
+  #event-hero .cs-container {
     max-width: 80rem;
   }
 }
 /* Large Desktop 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #hero-2154 .cs-container {
+  #event-hero .cs-container {
     max-width: 107.5rem;
   }
-  #hero-2154 .cs-text {
+  #event-hero .cs-text {
     max-width: 35rem;
   }
 }
