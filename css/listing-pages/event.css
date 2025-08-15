@@ -151,7 +151,7 @@ body {
   #event-hero .cs-container {
     max-width: 59rem;
   }
-  #event-hero .cs-content {
+  #event-hero .cs-container .cs-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
