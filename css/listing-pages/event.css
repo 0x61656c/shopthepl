@@ -63,7 +63,7 @@ body {
   #event-hero .event-headline {
       font-size: 1.25rem;
   }
-  #event-hero .cs-video-group {
+  #event-hero .cs-picture-group {
     width: 100%;
     /* 340px - 547px */
     height: clamp(21.25rem, 42.5vw, 34.2rem);
@@ -71,21 +71,21 @@ body {
     position: relative;
     z-index: 1;
   }
-  #event-hero .cs-video-wrapper {
+  #event-hero .cs-picture-wrapper {
     width: 100%;
     /* changes to 90% at tablet, then back to 100% at desktop */
     height: 100%;
     display: block;
     position: relative;
   }
-  #event-hero .cs-video-wrapper:hover {
+  #event-hero .cs-picture-wrapper:hover {
     cursor: pointer;
   }
-  #event-hero .cs-video-wrapper:hover .cs-play {
+  #event-hero .cs-picture-wrapper:hover .cs-play {
     transform: translate(-50%, -50%) scale(1.2);
   }
-  #event-hero .cs-video-wrapper video,
-  #event-hero .cs-video-wrapper .cs-picture {
+  #event-hero .cs-picture-wrapper video,
+  #event-hero .cs-picture-wrapper .cs-picture {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -94,8 +94,8 @@ body {
     top: 0;
     left: 0;
   }
-  #event-hero .cs-video-wrapper video img,
-  #event-hero .cs-video-wrapper .cs-picture img {
+  #event-hero .cs-picture-wrapper video img,
+  #event-hero .cs-picture-wrapper .cs-picture img {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -104,8 +104,8 @@ body {
     top: 0;
     left: 0;
   }
-  #event-hero .cs-video-wrapper video:before,
-  #event-hero .cs-video-wrapper .cs-picture:before {
+  #event-hero .cs-picture-wrapper video:before,
+  #event-hero .cs-picture-wrapper .cs-picture:before {
     content: '';
     width: 100%;
     height: 100%;
