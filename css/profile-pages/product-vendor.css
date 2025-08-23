@@ -4,6 +4,10 @@
 .pv-menu a {
   margin-bottom: 10px;
 }
+
+#cs-navigation .cs-middle {
+  height: 88px;
+}
 /*-- -------------------------- -->
 <---            Hero            -->
 <--- -------------------------- -*/
