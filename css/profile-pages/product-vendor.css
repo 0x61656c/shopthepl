@@ -117,6 +117,7 @@
     overflow: hidden;
     display: block;
     position: relative;
+    margin: auto;
   }
   #product-vendor .cs-picture img {
     position: absolute;
