@@ -13,7 +13,6 @@
   #product-vendor {
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
-    padding: clamp(7.25rem, 16.82vw, 13.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
     background-color: #f7f7f7;
     /* clips the svg wave from overflowing */
     overflow: hidden;
