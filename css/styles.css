@@ -742,6 +742,7 @@ body.cs-open {
   transform-origin: top;
   /* Added a longer transition delay for hiding (0.5s) but keep showing fast (0.3s) */
   transition: transform 0.3s, visibility 0.5s, opacity 0.5s;
+  right:0;
 }
 
 /* Add a new rule to handle the dropdown staying open with a delay when mouse leaves */
