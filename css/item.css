@@ -1,6 +1,12 @@
 .home-nav {
   display: none;
 }
+
+@media only screen and (min-width:1300px) {
+  .home-nav {
+    display:none;
+  }  
+}
 /*-- -------------------------- -->
 <---        Side By Side        -->
 <--- -------------------------- -*/
