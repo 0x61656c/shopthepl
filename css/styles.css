@@ -1229,7 +1229,7 @@ body.cs-open {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 150px;
+    top: 135px;
     left: 0;
     filter:brightness(.3);
   }
