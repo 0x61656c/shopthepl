@@ -1141,10 +1141,16 @@ body.cs-open {
   }
   #hero-2149 .cs-content {
     text-align: center;
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fffffff5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #hero-2149 .cs-topper {
+    color: black;
   }
   #hero-2149 .cs-title {
     /* 39px - 61px */
@@ -1153,7 +1159,7 @@ body.cs-open {
   }
   #hero-2149 .cs-title,
   #hero-2149 .cs-text {
-    color: var(--bodyTextColorWhite);
+    color: var(--primary);
   }
   #hero-2149 .cs-text {
     /* 16px - 20px */
@@ -1161,6 +1167,7 @@ body.cs-open {
     max-width: 55ch;
     margin-bottom: 2rem;
     opacity: 0.8;
+    color: black;
   }
   #hero-2149 .cs-button-solid {
     font-size: 1rem;
@@ -1214,7 +1221,7 @@ body.cs-open {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%); */
     /* prevents the cursor from interacting with it */
     pointer-events: none;
     opacity: 1;
@@ -1227,11 +1234,11 @@ body.cs-open {
   #hero-2149 .cs-background img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
     top: 135px;
     left: 0;
-    filter:brightness(.3);
+    /* filter:brightness(.25); */
   }
 }
                                 
@@ -1589,7 +1596,7 @@ body.cs-open {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: stretch;
-  gap: 2rem;
+  gap: 1rem;
 }
 #featured .cs-item-offer {
   width: 100%;
