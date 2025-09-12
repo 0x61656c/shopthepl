@@ -1144,7 +1144,6 @@ body.cs-open {
       justify-content: center;
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
-      margin-top: 200px;
   }
   #hero-541 .cs-content {
       text-align: left;
