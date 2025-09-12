@@ -1170,7 +1170,7 @@ body.cs-open {
       position: relative;
   }
   #hero-541 .cs-text {
-      font-size: var(--bodyFontSize);
+      font-size: 1.25rem;
       line-height: 1.5em;
       text-align: inherit;
       width: 100%;
