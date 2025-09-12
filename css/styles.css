@@ -1127,7 +1127,7 @@ body.cs-open {
       /* 144px - 300px - leaving extra space for the navigation */
       padding: clamp(9rem, 12.95vw, 18.75rem) 1rem 0;
       /* 130px - 175px */
-      padding-bottom: clamp(8.125rem, 12.5vw, 10.9375rem);
+      padding-bottom: clamp(4.125rem, 4.5vw, 8.9375rem);
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
       /* clips the color overlay so it doesn't cause an overflow */
