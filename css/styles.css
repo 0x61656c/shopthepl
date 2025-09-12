@@ -1298,7 +1298,6 @@ body.cs-open {
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
   }
   #cta-697 .cs-title {
     color: var(--bodyTextColorWhite);
