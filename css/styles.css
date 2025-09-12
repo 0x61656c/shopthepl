@@ -1273,11 +1273,11 @@ body.cs-open {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-697 {
-    padding: 5%;
+    padding: 3%;
     background-color: var(--primary);
     position: relative;
     z-index: 1;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
   }
   #cta-697 .cs-container {
     width: 100%;
@@ -1287,7 +1287,7 @@ body.cs-open {
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: clamp(1rem, 3vw, 4rem);
   }
   #cta-697 .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -1302,7 +1302,7 @@ body.cs-open {
   }
   #cta-697 .cs-title {
     color: var(--bodyTextColorWhite);
-    font-size: 2rem;
+    font-size: 1.25rem;
     max-width: none;
   }
   #cta-697 .cs-button-solid {
