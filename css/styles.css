@@ -885,9 +885,9 @@ body.cs-open {
   backface-visibility: hidden;
   transform: rotateX(180deg) translateX(-50%);
 }
-#cs-navigation .cs-mobile {
+/* #cs-navigation .cs-mobile {
   display: none;
-}
+} */
 #cs-navigation .cs-top-bar {
   width: 100%;
   height: 3.5rem;
