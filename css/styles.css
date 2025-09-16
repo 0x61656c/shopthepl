@@ -451,62 +451,7 @@ body.cs-open {
   order: 4;
 }
 }
-/* Inbetween - 1024px */
-@media only screen and (min-width: 1024px) {
-#cs-navigation .cs-bottom-bar {
-  justify-content: flex-start;
-  padding: 0;
-}
-#cs-navigation .cs-remove {
-  display: flex;
-}
-#cs-navigation .cs-toggle {
-  display: none;
-}
-#cs-navigation .cs-nav {
-  order: 2;
-}
-#cs-navigation .cs-ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  /* 20px - 36px */
-  gap: clamp(1.25rem, 2.6vw, 2.25rem);
-}
-#cs-navigation .cs-li {
-  list-style: none;
-  /* 24px - 28px */
-  padding: clamp(1.5rem, 2.1vw, 1.75rem) 0;
-  /* prevent flexbox from squishing it */
-  flex: none;
-}
-#cs-navigation .cs-li:last-of-type {
-  /* pushes the button to the far roght */
-  margin-left: auto;
-  padding: 0;
-}
-#cs-navigation .cs-li-link {
-  font-size: 1rem;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 0;
-  color: #1a1a1a;
-  display: block;
-  position: relative;
-  transition: color 0.3s;
-}
-#cs-navigation .cs-li-link.cs-active,
-#cs-navigation .cs-li-link:hover {
-  color: #0c5c92;
-}
-#cs-navigation .cs-nav-button {
-  display: none;
-}
-}
+
 
 
 
