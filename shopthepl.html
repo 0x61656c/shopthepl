@@ -208,8 +208,14 @@
             </li>
             <li class="cs-item">
                 <a href="" class="cs-link">
-                    <picture>
-                        <img src="https://shopthepl-images.s3.us-east-1.amazonaws.com/media/postpurchase.png" alt="waves">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)"
+                            srcset="https://0x61656c.github.io/shopthepl/media/shoponline.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://0x61656c.github.io/shopthepl/media/shoponline.jpg">
+                        <img loading="lazy" decoding="async"
+                            ssrc="https://shopthepl-images.s3.us-east-1.amazonaws.com/media/postpurchase.png"
+                            alt="cleaner" width="413" height="240" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">04</span>
