@@ -1460,7 +1460,6 @@ body.cs-open {
     top: 0;
     left: 0;
     transition: transform 0.6s, opacity 0.3s;
-    visibility: visible !important;
   }
   #howitworks .cs-number {
     font-size: 1.25rem;
