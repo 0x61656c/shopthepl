@@ -99,15 +99,15 @@ body {
   z-index: 1;
 }
 
-.column {
+#cs-navigation .column {
   float: left;
 }
 
-.left, .right {
+#cs-navigation .left, .right {
   width: 20%;
 }
 
-.middle {
+#cs-navigation .middle {
   width: 60%;
 }
 /* The sidebar menu */
