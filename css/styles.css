@@ -99,6 +99,15 @@ body {
   z-index: 1;
 }
 
+#cs-navigation .banner {
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  font-size: 1.25rem;
+  background-color: var(--primary);
+  color: white;
+}
+
 #cs-navigation .column {
   float: left;
 }
