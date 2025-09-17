@@ -31,39 +31,15 @@
         <!-- ============================================ -->
 
         <header id="cs-navigation" class="home-nav">
-            <div class="banner">
-                <span>This is a Banner</span>
-            </div>
-            <div class="row">
-                <div class="column left">
-                    <div id="mySidebar" class="sidebar">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Clients</a>
-                        <a href="#">Contact</a>
-                      </div>
-                      
-                      <div id="main">
-                        <button class="openbtn" onclick="openNav()">&#9776;</button>
-                      </div>
-                </div>
-                <div class="column right">
-                    <a href="https://shop-the-pl.tangram.co/home" class="cs-logo cs-desktop" aria-label="back to home">
-                            <!--Default Logo-->
-                            <img class="cs-default" src="https://0x61656c.github.io/shopthepl/media/cart.svg" alt="logo" width="300" height="250" aria-hidden="true" decoding="async">
-                    </a>
-                </div>
-                <div class="column">
-                    <a>Account</a>
-                </div>
-              </div>
-            <!-- <a href="https://shop-the-pl.tangram.co/home" class="cs-logo cs-desktop" aria-label="back to home">
+            <!--Nav Logo-->
+            <a href="https://shop-the-pl.tangram.co/home" class="cs-logo cs-desktop" aria-label="back to home">
                 <div class="cs-logo-wrapper">
+                    <!--Default Logo-->
                     <img class="cs-default" src="https://0x61656c.github.io/shopthepl/media/blue-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
                 </div>
             </a>
             <div class="cs-middle">
+                <!--Top Bar-->
                 <div class="cs-top-bar">
                     <div class="cs-top-social">
                         <a href="" class="cs-social-link">
@@ -86,16 +62,21 @@
                 <div class="cs-bottom-bar">
                     <a href="" class="cs-logo cs-mobile" aria-label="back to home">
                         <div class="cs-logo-wrapper">
+                            <!--Default Logo-->
                             <img class="cs-default" src="https://0x61656c.github.io/shopthepl/media/blue-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
                         </div>
                     </a>
+                    <!--Navigation List-->
                     <nav class="cs-nav" role="navigation">
+                        <!--Mobile Nav Toggle-->
+                        <button class="cs-toggle" aria-label="mobile menu toggle">
                             <div class="cs-box" aria-hidden="true">
                                 <span class="cs-line cs-line1" aria-hidden="true"></span>
                                 <span class="cs-line cs-line2" aria-hidden="true"></span>
                                 <span class="cs-line cs-line3" aria-hidden="true"></span>
                             </div>
                         </button>
+                        <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
                         <div class="cs-ul-wrapper">
                             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                                 <li class="cs-li">
@@ -103,6 +84,7 @@
                                         Home
                                     </a>
                                 </li>
+                                <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                                 <li class="cs-li cs-dropdown" tabindex="0">
                                     <span class="cs-li-link">
                                         Services
@@ -139,6 +121,7 @@
                                         FAQ
                                     </a>
                                 </li>
+                                <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                                 <li class="cs-li cs-dropdown" tabindex="0" >
                                     <span class="cs-li-link">
                                         Account
@@ -171,7 +154,7 @@
                     </a>
                 </div>
 
-            </div> -->
+            </div>
         </header>
         <script src="https://0x61656c.github.io/shopthepl/js/main.js"></script> 
     </body>

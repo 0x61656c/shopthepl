@@ -99,90 +99,1023 @@ body {
   z-index: 1;
 }
 
-#cs-navigation .banner {
+
+
+
+/*-- -------------------------- -->
+<---     Mobile Navigation      -->
+<--- -------------------------- -*/
+
+/* Mobile - 1023px */
+@media only screen and (max-width: 1299.5px) {
+body.cs-open {
+  overflow: hidden;
+}
+#cs-navigation {
   width: 100%;
-  text-align: center;
-  padding: 2%;
-  font-size: 1.25rem;
-  background-color: var(--primary);
-  color: white;
+  padding: 0.75rem 1rem 0 1rem;
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  z-index: 100;
+  transition: transform 0.3s, background-color 0.3s;
 }
-
-#cs-navigation .column {
-  float: left;
+#cs-navigation.cs-active .cs-link {
+  color: #fafbfc;
 }
-
-#cs-navigation .left, .right {
-  width: 20%;
+#cs-navigation.cs-active .cs-ul-wrapper {
+  opacity: 1;
+  transform: scaleY(1);
+  transition-delay: 0.1s;
 }
-
-#cs-navigation .middle {
-  width: 60%;
+#cs-navigation.cs-active .cs-li {
+  transform: translateY(0);
+  opacity: 1;
 }
-/* The sidebar menu */
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+#cs-navigation.scroll {
+  transform: translateY(-3rem);
 }
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+/* #cs-navigation.scroll #dark-mode-toggle {
+  top: 4.25rem;
+  right: 4.875rem;
+} */
+#cs-navigation .cs-location {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: height 0.3s, padding-bottom 0.3s, opacity 0.3s;
+  z-index: -3;
+}
+#cs-navigation .cs-top-social {
+  display: none;
+}
+#cs-navigation .cs-top-bar {
+  padding-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+#cs-navigation .cs-top-bar:before {
+  /* grey line */
+  content: '';
+  width: 100vw;
+  height: 1px;
+  background: #EFF1F0;
+  opacity: 1;
+  position: absolute;
   display: block;
-  transition: 0.3s;
+  bottom: 0;
+  left: 50%;
+  z-index: -2;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
+#cs-navigation .cs-bottom-bar {
+  height: auto;
+  padding: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
+#cs-navigation .cs-logo {
+  height: 7.5rem;
+  width: auto;
+  display: block;
+}
+#cs-navigation .cs-logo img {
+  height: 100%;
+  width: auto;
+}
+#cs-navigation .cs-logo-wrapper {
+  width: auto;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  perspective: 700px;
+  transform-style: preserve-3d;
+}
+#cs-navigation .cs-default {
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  transition: opacity 0.3s, transform 0.6s;
+}
+#cs-navigation .cs-dark {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: opacity 0.3s, transform 0.6s;
 }
-
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
+#cs-navigation .cs-desktop {
+  display: none;
+}
+#cs-navigation .cs-item {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  list-style: none;
+  margin: 0;
+  color: #585B5D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+#cs-navigation .cs-remove {
+  display: none;
+}
+#cs-navigation .cs-icon {
+  width: 1.25rem;
+  height: auto;
+  display: block;
+}
+#cs-navigation .cs-header {
+  display: none;
+}
+#cs-navigation .cs-link {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  text-align: inherit;
+  text-decoration: none;
+  margin: 0;
+  color: #4e4b66;
+  display: block;
+  transition: color 0.3s;
+}
+#cs-navigation .cs-toggle {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  background-color: #F3F3F3;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cs-navigation .cs-active .cs-line1 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+#cs-navigation .cs-active .cs-line2 {
+  top: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
+}
+#cs-navigation .cs-active .cs-line3 {
+  bottom: 100%;
+  opacity: 0;
+}
+#cs-navigation .cs-box {
+  width: 1.25rem;
+  height: 0.75rem;
+  position: relative;
+}
+#cs-navigation .cs-line {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #585B5D;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#cs-navigation .cs-line1 {
+  top: 0;
+  transform-origin: center;
+  transition: transform 0.5s, top 0.3S, left 0.3S;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+#cs-navigation .cs-line2 {
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: top 0.3s, left 0.3s, transform 0.5s;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+#cs-navigation .cs-line3 {
+  width: 0.75rem;
+  bottom: 0;
+  left: 0;
+  transform: none;
+  transition: bottom 0.3s, opacity 0.3s;
+}
+#cs-navigation .cs-contact-wrapper,
+#cs-navigation .cs-tablet,
+#cs-navigation .cs-button-border {
+  display: none;
+}
+}
+/* Tablet - 650px - 1024px */
+@media only screen and (min-width: 40.625rem) and (max-width: 1299.5px) {
+#cs-navigation .cs-location {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+#cs-navigation .cs-top-bar {
+  padding-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cs-navigation .cs-logo {
+  margin-right: auto;
+  order: 1;
+}
+#cs-navigation .cs-item {
+  position: relative;
+}
+#cs-navigation .cs-item:nth-of-type(2):after {
+  display: none;
+}
+#cs-navigation .cs-item:after {
+  /* divider line */
+  content: '';
+  width: 1px;
+  height: 100%;
+  margin: 0 1rem;
+  background: #CFD0D1;
+  opacity: 1;
+  position: relative;
+  display: block;
+}
+#cs-navigation .cs-top-social {
+  height: 2rem;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+}
+#cs-navigation .cs-social-link {
+  text-decoration: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cs-navigation .cs-social-icon {
+  width: 0.75rem;
+  height: auto;
+  opacity: 0.6;
+  display: block;
+}
+#cs-navigation .cs-bottom-bar {
+  gap: 1rem;
+}
+#cs-navigation .cs-li-link {
+  font-size: 1.5rem;
+}
+#cs-navigation .cs-nav-button {
+  text-decoration: none;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  order: 2;
+  position: relative;
+  perspective: 200px;
+  transform-style: preserve-3d;
+}
+#cs-navigation .cs-nav-button:hover .cs-wrapper {
+  transform: rotateY(180deg);
+}
+#cs-navigation .cs-nav-button .cs-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* prevents flexbox from squishing it */
+  flex: none;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.6s;
+}
+#cs-navigation .cs-nav-button .cs-wrapper:before {
+  /* backgorund color in pseudo so we can use the primary color variable and use opacity */
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #F3F3F3;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#cs-navigation .cs-nav-button .cs-icon {
+  width: 1.5rem;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+#cs-navigation .cs-nav-button .cs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#cs-navigation .cs-nav-button .cs-header {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  margin: 0;
+  color: #585B5D;
+  display: block;
+}
+#cs-navigation .cs-nav-button .cs-link-content {
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+  display: block;
+}
+#cs-navigation .cs-nav {
+  order: 4;
+}
+}
+/* Inbetween - 1024px */
+@media only screen and (min-width: 1024px) {
+#cs-navigation .cs-bottom-bar {
+  justify-content: flex-start;
+  padding: 0;
+}
+#cs-navigation .cs-remove {
+  display: flex;
+}
+#cs-navigation .cs-toggle {
+  display: none;
+}
+#cs-navigation .cs-nav {
+  order: 2;
+}
+#cs-navigation .cs-ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* 20px - 36px */
+  gap: clamp(1.25rem, 2.6vw, 2.25rem);
+}
+#cs-navigation .cs-li {
+  list-style: none;
+  /* 24px - 28px */
+  padding: clamp(1.5rem, 2.1vw, 1.75rem) 0;
+  /* prevent flexbox from squishing it */
+  flex: none;
+}
+#cs-navigation .cs-li:last-of-type {
+  /* pushes the button to the far roght */
+  margin-left: auto;
+  padding: 0;
+}
+#cs-navigation .cs-li-link {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  color: #1a1a1a;
+  display: block;
+  position: relative;
+  transition: color 0.3s;
+}
+#cs-navigation .cs-li-link.cs-active,
+#cs-navigation .cs-li-link:hover {
+  color: #0c5c92;
+}
+#cs-navigation .cs-nav-button {
+  display: none;
+}
 }
 
-.openbtn:hover {
-  background-color: #444;
+
+/*-- -------------------------- -->
+<---   Mobile Navigation Menu   -->
+<--- -------------------------- -*/
+
+/* Small Desktop - 1024px */
+@media only screen and (max-width: 1023.5px) {
+#cs-navigation .cs-ul-wrapper {
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s, opacity 0.3s;
+}
+#cs-navigation .cs-ul {
+  margin: 0;
+  padding: 3rem 0 3rem 0;
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  /* overflow: scroll; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+#cs-navigation .cs-li {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  margin-right: 0;
+  /* transition from these values */
+  transform: translateY(-4.375rem);
+  opacity: 0;
+  transition: transform 0.6s, opacity 0.9s;
+}
+#cs-navigation .cs-li:nth-of-type(1) {
+  transition-delay: 0.05s;
+}
+#cs-navigation .cs-li:nth-of-type(2) {
+  transition-delay: 0.1s;
+}
+#cs-navigation .cs-li:nth-of-type(3) {
+  transition-delay: 0.15s;
+}
+#cs-navigation .cs-li:nth-of-type(4) {
+  transition-delay: 0.2s;
+}
+#cs-navigation .cs-li:nth-of-type(5) {
+  transition-delay: 0.25s;
+}
+#cs-navigation .cs-li:nth-of-type(6) {
+  transition-delay: 0.3s;
+}
+#cs-navigation .cs-li:nth-of-type(7) {
+  transition-delay: 0.35s;
+}
+#cs-navigation .cs-li:nth-of-type(8) {
+  transition-delay: 0.4s;
+}
+#cs-navigation .cs-li:nth-of-type(9) {
+  transition-delay: 0.45s;
+}
+#cs-navigation .cs-li-link {
+  /* 16px - 24px */
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-decoration: none;
+  margin: 0;
+  color: #1a1a1a;
+  display: inline-block;
+  position: relative;
+}
+#cs-navigation .cs-li-link:before {
+  /* active state underline */
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 1;
+  position: absolute;
+  display: none;
+  bottom: -0.125rem;
+  left: 0;
+}
+#cs-navigation .cs-li-link.cs-active:before {
+  display: block;
+}
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+/*-- -------------------------- -->
+<---     Navigation Dropdown    -->
+<--- -------------------------- -*/
+
+/* Mobile - 1023px */
+@media only screen and (max-width: 1023.5px) {
+#cs-navigation .cs-li {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+#cs-navigation .cs-dropdown {
+  position: relative;
+  color: #fafbfc;
+}
+#cs-navigation .cs-dropdown:hover {
+  cursor: pointer;
+}
+/* Add a pseudo-element to create a larger hover target area */
+#cs-navigation .cs-dropdown:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: 30px; /* Extend below to connect with dropdown */
+  z-index: -1;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+/* Create a connection between dropdown parent and its items */
+#cs-navigation .cs-dropdown:after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
 }
 
+#cs-navigation .cs-dropdown:hover:after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cs-navigation .cs-dropdown:hover .cs-drop-ul {
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+#cs-navigation .cs-dropdown:hover .cs-drop-li {
+  opacity: 1;
+  transform: translateY(0);
+}
+#cs-navigation .cs-dropdown .cs-li-link {
+  position: relative;
+  transition: opacity 0.3s;
+}
+#cs-navigation .cs-drop-icon {
+  width: 1.5rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: -1.25rem;
+  transform: translateY(-50%);
+}
+#cs-navigation .cs-drop-ul {
+  width: 75%;
+  height: 0;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #0c5c92;
+  /* overflow: hidden; */
+  opacity: 0;
+  /* visibility: hidden; */
+  display: contents;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, visibility 0.3s;
+}
+#cs-navigation .cs-drop-li {
+  list-style: none;
+}
+#cs-navigation .cs-li-link.cs-drop-link {
+  /* 14px - 16px */
+  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  color: #1a1a1a;
+}
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 1024px) {
+#cs-navigation .cs-dropdown {
+  position: relative;
+}
+#cs-navigation .cs-dropdown:hover {
+  cursor: pointer;
+}
+#cs-navigation .cs-dropdown:hover .cs-drop-ul {
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+#cs-navigation .cs-dropdown:hover .cs-drop-li {
+  opacity: 1;
+  transform: translateY(0);
+}
+#cs-navigation .cs-drop-icon {
+  width: 1.5rem;
+  height: auto;
+  display: inline-block;
+}
+#cs-navigation .cs-drop-ul {
+  min-width: 12.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  /* overflow: hidden; */
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
+  border-bottom: 5px solid #0c5c92;
+  /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+  position: absolute;
+  top: 100%;
+  /* Changed from -100 to 10 to make sure dropdown appears above other content */
+  z-index: 10;
+  transform: scaleY(0);
+  transform-origin: top;
+  /* Added a longer transition delay for hiding (0.5s) but keep showing fast (0.3s) */
+  transition: transform 0.3s, visibility 0.5s, opacity 0.5s;
+  right:0;
+}
+
+/* Add a new rule to handle the dropdown staying open with a delay when mouse leaves */
+#cs-navigation .cs-drop-ul:hover {
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Add padding to make dropdown items easier to click */
+#cs-navigation .cs-drop-li {
+  list-style: none;
+  font-size: 1rem;
+  text-decoration: none;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  color: #4e4b66;
+  display: block;
+  transform: translateY(-10/16rem);
+  transition: opacity 0.6s, transform 0.6s;
+}
+#cs-navigation .cs-li-link {
+  display: flex;
+  align-items: center;
+}
+#cs-navigation .cs-li-link.cs-drop-link {
+  font-size: 1rem;
+  white-space: nowrap;
+  line-height: 1.5em;
+  text-decoration: none;
+  padding: 0.75rem;
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+  color: #4e4b66;
+  display: block;
+  transition: color 0.3s, background-color 0.3s;
+}
+#cs-navigation .cs-li-link.cs-drop-link:hover {
+  background-color: #f7f7f7;
+}
+#cs-navigation .cs-li-link.cs-drop-link:before {
+  display: none;
+}
+}
+
+
+/*-- -------------------------- -->
+<---     Desktop Navigation     -->
+<--- -------------------------- -*/
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 1300px) {
+#cs-navigation {
+  /* 136px tall */
+  --headerHeight: 8.5rem;
+  width: 100%;
+  padding: 0;
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  transition: height 0.3s, background-color 0.3s;
+}
+#cs-navigation.scroll .cs-top-bar {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+#cs-navigation.scroll .cs-top-bar:before {
+  width: 0;
+}
+#cs-navigation.scroll .cs-middle {
+  height: 5rem;
+}
+#cs-navigation.scroll .cs-logo,
+#cs-navigation.scroll .cs-contact-wrapper {
+  height: 5rem;
+}
+#cs-navigation.scroll .cs-logo img {
+  max-height: 5rem;
+}
+#cs-navigation.scroll .cs-toggle {
+  margin-top: 0;
+}
+#cs-navigation .cs-toggle {
+  display: none;
+}
+#cs-navigation .cs-logo {
+  width: 20%;
+  max-width: 21.25rem;
+  height: var(--headerHeight);
+  border-right: 1px solid #E7E7E8;
+  padding: 1rem;
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: height 0.3s;
+}
+#cs-navigation .cs-logo img {
+  width: 80%;
+  max-width: 16.25rem;
+  height: auto;
+  max-height: 7.5rem;
+  box-sizing: border-box;
+  /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+  object-fit: contain;
+  transition: max-height 0.3s, opacity 0.3s, transform 0.6s;
+}
+#cs-navigation .cs-logo-wrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  perspective: 700px;
+  transform-style: preserve-3d;
+}
+#cs-navigation .cs-default {
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+#cs-navigation .cs-dark {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  transform: rotateX(180deg) translateX(-50%);
+}
+#cs-navigation .cs-mobile {
+  display: none;
+}
+#cs-navigation .cs-top-bar {
+  width: 100%;
+  height: 3.5rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+}
+#cs-navigation .cs-top-bar:before {
+  /* grey line */
+  content: '';
+  height: 1px;
+  background: #E7E7E8;
+  opacity: 1;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: -2.5rem;
+  right: -2.5rem;
+  z-index: -2;
+  transition: width 0.3s;
+}
+#cs-navigation .cs-top-social {
+  height: 2rem;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+}
+#cs-navigation .cs-social-link {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+#cs-navigation .cs-social-link:hover {
+  background-color: #0c5c92;
+}
+#cs-navigation .cs-social-icon {
+  width: 0.75rem;
+  height: auto;
+  opacity: 0.6;
+  display: block;
+}
+#cs-navigation .cs-location {
+  display: flex;
+  flex-direction: row;
+}
+#cs-navigation .cs-item {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex: none;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  position: relative;
+}
+#cs-navigation .cs-item:last-of-type:after {
+  display: none;
+}
+#cs-navigation .cs-item:hover .cs-picture {
+  transform: scale(1.1);
+}
+#cs-navigation .cs-item:after {
+  /* divider line */
+  content: '';
+  width: 1px;
+  height: 100%;
+  /* 24px - 44px */
+  margin: 0 1.5rem;
+  background: #EFF1F0;
+  opacity: 1;
+  position: relative;
+  display: block;
+}
+#cs-navigation .cs-link {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  text-align: inherit;
+  text-decoration: none;
+  margin: 0;
+  color: #4e4b66;
+  display: block;
+  transition: color 0.3s;
+}
+#cs-navigation .cs-link:hover {
+  text-decoration: underline;
+}
+#cs-navigation .cs-middle {
+  width: 100%;
+  height: var(--headerHeight);
+  padding: 0 2.5rem 0 2.5rem;
+  transition: height 0.3s;
+}
+#cs-navigation .cs-nav {
+  order: -1;
+}
+#cs-navigation .cs-bottom-bar {
+  width: 100%;
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+#cs-navigation .cs-desktop-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  order: 2;
+  position: relative;
+  perspective: 200px;
+  transform-style: preserve-3d;
+}
+#cs-navigation .cs-desktop-button:hover .cs-wrapper {
+  transform: rotateY(360deg);
+}
+#cs-navigation .cs-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* prevents flexbox from squishing it */
+  flex: none;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.6s;
+}
+#cs-navigation .cs-wrapper:before {
+  /* backgorund color in pseudo so we can use the primary color variable and use opacity */
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #F3F3F3;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#cs-navigation .cs-button-icon {
+  width: 1.25rem;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+#cs-navigation .cs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#cs-navigation .cs-header {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  margin: 0;
+  color: #585B5D;
+  display: block;
+}
+#cs-navigation .cs-link-content {
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+  display: block;
+}
+#cs-navigation .cs-nav-button,
+#cs-navigation .cs-button-border {
+  display: none;
+}
+#cs-navigation .cs-contact-wrapper {
+  width: 18%;
+  max-width: 18.375rem;
+  height: var(--headerHeight);
+  border-left: 1px solid #E7E7E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  transition: height 0.3s;
+}
+}
+/* Small Desktop - 1500px */
+@media only screen and (min-width: 1500px) {
+#cs-navigation .cs-nav {
+  margin-right: 210px;
+}
+#cs-navigation .cs-button-border {
+  font-size: 1rem;
+  line-height: 2.875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 1.75rem;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+#cs-navigation .cs-button-border:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+#cs-navigation .cs-button-border:hover .cs-icon {
+  filter: grayscale(1) brightness(1000%);
+}
+#cs-navigation .cs-button-border .cs-icon {
+  width: 1.25rem;
+}
+}
 
 /*-- -------------------------- -->
 <---           Hero             -->
@@ -1551,3 +2484,4 @@ body {
   flex: none;
 }
 }
+                              
