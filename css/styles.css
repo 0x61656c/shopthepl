@@ -1286,12 +1286,12 @@ body.cs-open {
   }
   #services-562 .cs-content-top {
       /* set text aling to left if content needs to be left aligned */
-      text-align: left;
+      /* text-align: left; */
       width: 100%;
       display: flex;
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
-      align-items: flex-start;
+      align-items: center;
   }
   #services-562 .cs-content {
       text-align: left;
@@ -2041,6 +2041,7 @@ body.cs-open {
   }
   #collection-1578 .cs-title {
     margin: 0;
+    color: var(--primary);
   }
   #collection-1578 .cs-topper {
     color: var(--secondary);
@@ -2096,7 +2097,7 @@ body.cs-open {
     transition: transform .6s, opacity .3s;
   }
   #collection-1578 .cs-category {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 4rem;
     text-align: center;
@@ -2104,7 +2105,7 @@ body.cs-open {
     width: 85%;
     /* 12px - 20px top & bottom, 16px - 24px sides*/
     padding: 0 clamp(1rem, 3vw, 1.5rem);
-    color: var(--bodyTextColorWhite);
+    color: black;
     position: relative;
     transition: color .3s;
     /* blurred background - done as a pseudo element so backdrop-filter won't distort the text */
@@ -2137,10 +2138,9 @@ body.cs-open {
     align-items: center;
   }
   #collection-1578 .cs-content {
-    width: 30%;
-    max-width: 19.0625rem;
-    text-align: left;
-    align-items: flex-start;
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
   #collection-1578 .cs-card-group {
     max-width: 80rem;
