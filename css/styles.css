@@ -2133,7 +2133,7 @@ body.cs-open {
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #collection-1578 .cs-container {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
