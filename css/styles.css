@@ -16,6 +16,11 @@
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
+@font-face {
+  font-family: Fascinate;
+  src: url(fascinateInline-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -136,7 +141,7 @@ body {
 .middle {
   width: 60%;
   text-align: center;
-  font-family: "Fascinate Inline", sans-serif;
+  font-family: Fascinate;
   font-size: 30px;
 }
 
