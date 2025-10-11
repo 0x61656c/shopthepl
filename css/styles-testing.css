@@ -1,0 +1,243 @@
+:root {
+  /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+  --primary: #0c5c92;
+  --primaryLight: #cfecff;
+  --secondary: black;
+  --secondaryLight: white;
+  --headerColor: #1a1a1a;
+  --bodyTextColor: black;
+  --bodyTextColorWhite: #fafbfc;
+  /* 13px - 16px */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+}
+.cs-topper {
+  font-size: clamp(0.8125rem, 1.6vw, 1rem);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: .1em;
+  font-weight: 700;
+  color: #0c5c92;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.cs-title {
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: inherit;
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  position: relative;
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+.cs-text {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-align: inherit;
+  width: 100%;
+  max-width: 40.625rem;
+  margin: 0;
+  color: #4e4b66;
+}
+.cs-button-solid {
+  font-size: 1rem;
+  font-weight: 700;
+  /* 46px - 56px */
+  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  min-width: 9.375rem;
+  margin: 0;
+  margin-top: 2rem;
+  /* prevents padding from adding to the width */
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  color: #fff;
+  background-color: #0c5c92;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.cs-button-small {
+  font-size: 1rem;
+  font-weight: 700;
+  /* 46px - 56px */
+  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  min-width: 9.375rem;
+  margin: 0;
+  margin-top: 2rem;
+  /* prevents padding from adding to the width */
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  color: #fff;
+  background-color: #0c5c92;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.top-banner {
+  height: 50px;
+  text-align: center;
+  background-color: var(--primaryLight) ;
+}
+.top-banner span {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 20%;
+  text-align: left;
+}
+
+.right {
+  width: 20%;
+  text-align: right;
+}
+
+.right img {
+  margin: 7px;
+}
+
+.middle {
+  width: 60%;
+  text-align: center;
+  font-family: "Fascinate Inline", sans-serif;
+  font-size: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  height: 50px;
+  margin-top: 10px;
+}
+
+#nav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  height: 50px;
+}
+
+
+/* Style navigation menu links */
+#nav a {
+  color: black;
+  padding: 9px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+
+/* Style the hamburger menu */
+#nav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+#nav a:hover {
+  color: black;
+}
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3rem !important;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 33px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

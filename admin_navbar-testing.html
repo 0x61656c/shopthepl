@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Local Online Marketplace - support local, keep our money local.">
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/x-icon" href="https://0x61656c.github.io/shopthepl/media/favicon.ico"/>
+        <link rel="canonical" href="https:/shopthepl.com">
+        <title>Shop The PL</title> 
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/styles.css" />
+        <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/item.css" /> -->
+        <link rel="stylesheet" href="css/styles-testing.css">
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
+        <!-- MuseoModerno Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Alegreya -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                <!-- Fascinate Inline Static -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top-banner">
+            <span>Enjoy Free Shipping on All Products!</span>
+        </div>
+
+
+        <header id="nav">
+            <div class="row">
+                <div class="column left">
+
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#"><img src="media/blueheart.png" width=15>Favorites</a>
+                        <a href="#">Product Categories</a>
+                        <a href="#">All Products</a>
+                        <a href="#">Vendor Categories</a>
+                        <a href="#">All Vendors</a>
+                        <div class="account-menu" style="margin-top:25%;">
+                            <span style="color: var(--primary); margin-left: 5px; font-size: 1.25rem;">Account</span>
+                            <a href="https://shop-the-pl.tangram.co/platform_users" class="">Users</a>
+                            <a href="https://shop-the-pl.tangram.co/platform_transactions" class="" >Transactions</a>
+                            <a href="https://shop-the-pl.tangram.co/platform_listings" class="" >Listings</a>
+                            <a href="https://shop-the-pl.tangram.co/logout" class="">Logout</a>
+
+                        </div>
+                      </div>
+                      
+                      <div id="main">
+                        <button class="openbtn" onclick="openNav()">&#9776;</button>
+                      </div>
+                </div>
+                <div class="column middle">Shop the PL 
+                </div>
+                <div class="column right">
+                    <img src="media/shop-icon.png " width=28>
+                    <br><p style="margin: 0; font-weight: 700;"
+                        >(<span tg-user-content=cart-size></span>)</p>
+                </div>
+            </div>
+        </header>
+
+
+    </body>
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "300px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</html>
