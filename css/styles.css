@@ -250,7 +250,248 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
 
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1617 {
+    /* 200px - 300px - top leaving extra space for the navigation */
+    /* 160px - 240px bottom */
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1617 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  #hero-1617 .cs-content {
+    --cornerWidth: 8.75rem;
+    --cornerHeight: 8.75rem;
+    width: 100%;
+    max-width: 53.125rem;
+    /* 48px - 80px top & bottom */
+    /* 16px - 48px left & right */
+    padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 5vw, 3rem);
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1617 .cs-content:before {
+    /* top left corner */
+    content: '';
+    width: 35vw;
+    max-width: var(--cornerWidth);
+    height: 35vw;
+    max-height: var(--cornerHeight);
+    border: 2px solid #fff;
+    border-right: none;
+    border-bottom: none;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #hero-1617 .cs-content:after {
+    /* top right corner */
+    content: '';
+    width: 35vw;
+    max-width: var(--cornerWidth);
+    height: 35vw;
+    max-height: var(--cornerHeight);
+    border: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  #hero-1617 .cs-corners {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #hero-1617 .cs-corners:before {
+    /* bottom left corner */
+    content: '';
+    width: 35vw;
+    max-width: var(--cornerWidth);
+    height: 35vw;
+    max-height: var(--cornerHeight);
+    border: 2px solid #fff;
+    border-right: none;
+    border-top: none;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #hero-1617 .cs-corners:after {
+    /* bottom right corner */
+    content: '';
+    width: 35vw;
+    max-width: var(--cornerWidth);
+    height: 35vw;
+    max-height: var(--cornerHeight);
+    border: 2px solid #fff;
+    border-left: none;
+    border-top: none;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  #hero-1617 .cs-topper {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+  }
+  #hero-1617 .cs-chevron {
+    --chevronColor: var(--primary);
+    width: 3rem;
+    height: auto;
+  }
+  #hero-1617 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 51.8125rem;
+    /* 16px - 24px */
+    margin: 0 0 2.5rem 0;
+    color: #fff;
+    position: relative;
+  }
+  #hero-1617 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    /* 464px - 622px */
+    max-width: clamp(29rem, 60vw, 38.785rem);
+    margin: 0 auto 0;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  #hero-1617 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #1a1a1a;
+    min-width: 12.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #hero-1617 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #hero-1617 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #hero-1617 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-1617 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #111926;
+    opacity: 0.8;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+  }
+  #hero-1617 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Large Desktop - Parallax Effect - 1600px */
+@media only screen and (min-width: 100rem) {
+  #hero-1617 {
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #hero-1617 .cs-background img {
+    display: none;
+  }
+}
+                                
 
 /*-- -------------------------- -->
 <---           Hero             -->
