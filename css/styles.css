@@ -259,7 +259,7 @@ body {
   #hero-2149 {
     /* 300px - 400px on top - leaving extra space for the navigation */
     /* 60px - 100px on bottom */
-    padding: clamp(18.75rem, 54vw, 25rem) 1rem clamp(3.75rem, 7.5vw, 6.25rem) 1rem;
+    padding: 48px 40px 85px 40px;
     /* prevents the topper line from causing an overflow */
     overflow: hidden;
     position: relative;
