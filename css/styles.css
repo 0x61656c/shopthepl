@@ -281,7 +281,7 @@ body {
   }
   #hero-2149 .cs-title {
     /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    font-size: clamp(2.1375rem, 5vw, 3.8125rem);
     max-width: 30ch;
   }
   #hero-2149 .cs-title,
@@ -341,6 +341,7 @@ body {
     top: 0;
     left: 0;
     z-index: -2;
+    filter: brightness(.5);
   }
   #hero-2149 .cs-background:before {
     /* Overlay */
