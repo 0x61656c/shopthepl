@@ -1167,6 +1167,8 @@ body {
     max-width: 100%;
     grid-column: span 12;
     position: relative;
+    border: 10px solid;
+    border-image: linear-gradient(var(--primaryLight), var(--primary)) 30;
   }
   #collection-1578 .cs-item:hover .cs-background img {
     opacity: .5;
