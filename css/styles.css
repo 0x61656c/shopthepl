@@ -1452,7 +1452,7 @@ body {
   display: flex;
   grid-column: span 12;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
 }
 #cta .cs-wrapper {
