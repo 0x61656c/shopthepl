@@ -310,7 +310,7 @@ body {
     box-sizing: border-box;
     /* 32px - 48px */
     padding: 0 clamp(2rem, 4vw, 3rem);
-    background-color: #0c5c92c2;
+    background-color: var(--primary);
     color: var(--bodyTextColorWhite);
     display: inline-block;
     position: relative;
