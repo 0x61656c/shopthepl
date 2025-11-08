@@ -257,7 +257,7 @@ body {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-2149 {
-    /* 300px - 400px on top - leaving extra space for the navigation */
+    border-top: 1px solid #c7c4de;
     /* 60px - 100px on bottom */
     padding: 48px 40px 85px 40px;
     /* prevents the topper line from causing an overflow */
@@ -284,11 +284,11 @@ body {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 5vw, 3.8125rem);
     max-width: 30ch;
-    text-shadow: 5px 5px 0px #0c5c92;
+    text-shadow: 5px 5px 0px var(--primaryLight);
   }
   #hero-2149 .cs-title,
   #hero-2149 .cs-text {
-    color: var(--bodyTextColorWhite);
+    color: black;
   }
   #hero-2149 .cs-text {
     /* 16px - 20px */
@@ -343,7 +343,7 @@ body {
     top: 0;
     left: 0;
     z-index: -2;
-    filter: brightness(.5);
+    opacity: .4;
   }
   #hero-2149 .cs-background:before {
     /* Overlay */
