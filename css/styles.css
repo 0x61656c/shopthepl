@@ -350,7 +350,6 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
     /* prevents the cursor from interacting with it */
     pointer-events: none;
     opacity: 1;
