@@ -32,7 +32,7 @@ body {
   box-sizing: border-box;
 }
 .cs-topper {
-  font-size: clamp(0.8125rem, 1.6vw, 1rem);
+  font-size: clamp(1.25rem, 1.6vw, 1rem);
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: inherit;
@@ -44,7 +44,7 @@ body {
 }
 
 .cs-title {
-  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
   font-weight: 900;
   line-height: 1.2em;
   text-align: center;
@@ -57,7 +57,7 @@ body {
 }
 
 .cs-text {
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.5em;
   text-align: inherit;
   width: 100%;
@@ -282,7 +282,7 @@ body {
   }
   #hero-2149 .cs-title {
     /* 39px - 61px */
-    font-size: clamp(2.1375rem, 5vw, 3.8125rem);
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
     max-width: 30ch;
     text-shadow: 5px 5px 0px #0c5c92;
   }
@@ -427,7 +427,7 @@ body {
   }
   #services-562 .cs-h3 {
       /* 25px - 31px */
-      font-size: clamp(1.5625rem, 3vw, 1.9375rem);
+      font-size: clamp(1.75rem, 3vw, 1.9375rem);
       line-height: 1.2em;
       font-weight: 700;
       text-align: inherit;
@@ -447,7 +447,7 @@ body {
   }
   #services-562 .cs-li {
       /* 16px - 20px */
-      font-size: clamp(1rem, 2vw, 1.25rem);
+      font-size: clamp(1.15rem, 2vw, 1.25rem);
       font-weight: 700;
       list-style: none;
       line-height: 1.5em;
