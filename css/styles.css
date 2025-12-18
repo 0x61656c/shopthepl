@@ -1219,6 +1219,7 @@ body {
     color: black;
     position: relative;
     transition: color .3s;
+    background-color: #cfecffb3;
     /* blurred background - done as a pseudo element so backdrop-filter won't distort the text */
   }
   #collection-1578 .cs-category:hover {
