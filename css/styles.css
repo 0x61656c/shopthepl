@@ -1171,8 +1171,7 @@ body {
     max-width: 100%;
     grid-column: span 12;
     position: relative;
-    border: 10px solid;
-    border-image: linear-gradient(var(--primaryLight), var(--primary)) 30;
+    max-height: 200px;
   }
   #collection-1578 .cs-item:hover .cs-background img {
     opacity: .5;
@@ -1259,7 +1258,7 @@ body {
   }
   #collection-1578 .cs-item {
     /* 180px - 348px */
-    height: clamp(11.75rem, 25vw, 21.75rem);
+    height: clamp(11.75rem, 18vw, 21.75rem);
     grid-column: span 4;
   }
 }
