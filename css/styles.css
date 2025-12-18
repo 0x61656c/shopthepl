@@ -293,7 +293,7 @@ body {
   }
   #hero-2149 .cs-text {
     /* 16px - 20px */
-    font-size: clamp(1.2rem, 2vw, 1.25rem);
+    font-size: clamp(1.5rem, 2vw, 1.25rem);
     max-width: 55ch;
     margin-bottom: 2rem;
     opacity: 0.8;
@@ -381,7 +381,7 @@ body {
 @media only screen and (min-width: 0rem) {
   #services-562 {
       padding: var(--sectionPadding);
-      background-image: url(https://0x61656c.github.io/shopthepl/media/geometric-leaves.webp);
+      background-color: var(--primaryLight);
   }
   #services-562 .cs-container {
       width: 100%;
@@ -408,7 +408,6 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      background-color: #ffffff8f;
   }
 
   #services-562 .cs-topper {
