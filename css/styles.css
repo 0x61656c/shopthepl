@@ -887,7 +887,7 @@ body {
 #featured .cs-collection-wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   align-items: stretch;
   gap: 1rem;
 }
