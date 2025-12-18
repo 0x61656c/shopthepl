@@ -942,18 +942,7 @@ body {
 #featured .cs-item:hover .cs-picture img {
   transform: scale(1.05);
 }
-#featured .cs-offer-tag {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  width: fit-content;
-  margin-bottom: 0.5rem;
-  padding: 0.25rem 0.5rem;
-  color: #f7f7f7;
-  background-color: #1F6506;
-  display: block;
-}
+
 #featured .cs-h3 {
   font-size: clamp(1.9375rem, 5vw, 2.4375rem);
   font-weight: 900;
@@ -1049,6 +1038,20 @@ body {
   line-height: 1.2em;
   text-decoration: line-through;
   color: #767676;
+}
+#featured .addtocart {
+  font-size: 1rem;
+    font-weight: 700;
+    line-height: clamp(1.875rem, 4.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 0 0.5rem;
+    color: #fff;
+    background-color: #0c5c92;
+    display: inline-block;
+    position: relative;
 }
 }
 /* Tablet - 768px */
