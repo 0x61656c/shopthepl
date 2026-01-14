@@ -15,7 +15,7 @@
         <title>Shop The PL</title> 
         <!-- CSS -->
         <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/styles.css" />
-        <link rel="stylesheet" href="css/item-local.css" />
+        <link rel="stylesheet" href="https://0x61656c.github.io/shopthepl/css/item.css" />
 
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
@@ -29,107 +29,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section id="item" >
-            <div class="wrapper">
-                <div id="one">
-                        <!-- Container for the image gallery -->
-                        <div class="container">
-                  
-                          <!-- Full-width images with number text -->
-                          <div class="mySlides">
-                            <div class="numbertext">1 / 7</div>
-                              <img src="media/blueheart.png" style="width:100%">
-                          </div>
-                  
-                          <div class="mySlides">
-                            <div class="numbertext">2 / 7</div>
-                              <img src="media/blue-cart.png" style="width:100%">
-                          </div>
-                  
-                          <div class="mySlides">
-                            <div class="numbertext">3 / 7</div>
-                              <img src="media/blueheart.png" style="width:100%">
-                          </div>
-                  
-                          <div class="mySlides">
-                            <div class="numbertext">4 / 7</div>
-                              <img src="media/blue-cart.png" style="width:100%">
-                          </div>
-                  
-                          <div class="mySlides">
-                            <div class="numbertext">5 / 7</div>
-                              <img src="media/blueheart.png" style="width:100%">
-                          </div>
-                  
-                          <div class="mySlides">
-                            <div class="numbertext">6 / 7</div>
-                              <img src="media/blue-cart.png" style="width:100%">
-                          </div>
-                  
-                          <!-- Next and previous buttons -->
-                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                    
-                          <!-- Thumbnail images -->
-                          <div class="row">
-                            <div class="column">
-                              <img class="demo cursor" src="media/blueheart.png" style="width:100%" onclick="currentSlide(1)" alt="The Bathroom Duo">
-                            </div>
-                            <div class="column">
-                              <img class="demo cursor" src="media/blue-cart.png" style="width:100%" onclick="currentSlide(2)" alt="The Double Sinks">
-                            </div>
-                            <div class="column">
-                              <img class="demo cursor" src="media/blueheart.png" style="width:100%" onclick="currentSlide(3)" alt="The Storage Space">
-                            </div>
-                            <div class="column">
-                              <img class="demo cursor" src="media/blue-cart.png" style="width:100%" onclick="currentSlide(4)" alt="The New Kitchen">
-                            </div>
-                            <div class="column">
-                              <img class="demo cursor" src="media/blueheart.png" style="width:100%" onclick="currentSlide(5)" alt="The Glass Shower">
-                            </div>
-                            <div class="column">
-                              <img class="demo cursor" src="media/blue-cart.png" style="width:100%" onclick="currentSlide(6)" alt="The Open Shower">
-                            </div>
-                          </div>
-                        </div>
-                </div>
-                <div id="two">
-                    <div class="cs-container">
-                        <div class="cs-content">
-                            <span class="cs-topper" tg-attribute="TGfield_display-name_text-field"></span>
-                            <h2 class="cs-title" tg-attribute= "TGfield_title_text-field">Product/Service Name</h2>
-                            <p class="cs-text-large">
-                                <span class="cs-text-large" tg-attribute = "TGfield_price_number-field">price</span><br>
-                                <span tg-attribute = "TGfield_short-description_text-field"></span>short description</span>
-                                <details>
-                                    <summary>Full Description</summary>
-                                    <span tg-attribute = "TGfield_short-description_text-field">FULL</span></span>
-                                </details>
-
-                            </p>
-                            <br><a tg-attribute = "link" href="/listings/{listing_id}/new_transaction" class="cs-button-solid">Add to Cart</a>
-                            <div>
-                                <details>
-                                    <summary>Shipping Policy</summary>
-                                </details>
-                                <details>
-                                    <summary>Return Policy</summary>
-                                </details>
-                            </div>
-                            <div class="cs-spotlight" >
-                                <h3>Check Out the Vendor</h3>
+        <section id="item" tg-section-id="TGsection_item-details">
+            <div tg-import-type = "listing">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper" tg-attribute="TGfield_display-name_text-field"></span>
+                        <h2 class="cs-title" tg-attribute= "TGfield_title_text-field">Product/Service Name</h2>
+                        <p class="cs-text-large">
+                            <span class="cs-text-large" tg-attribute = "TGfield_price_number-field"></span><br>
+                            <span tg-attribute = "TGfield_short-description_text-field"></span></span>
+                        </p>
+                        <br><span class="cs-text" tg-attribute = "TGfield_about_text-area"></span>
+                        <a tg-attribute = "link" href="/listings/{listing_id}/new_transaction" class="cs-button-solid">Add to Cart</a>
+                        <div tg-section-id="TGsection_vendor-details">
+                            <div class="cs-spotlight" tg-import-type = "user">
                                 <img tg-attribute = "avatar"class="cs-image" aria-hidden="true" decoding="async" alt="graphic" width="154" height="154">
                                 <div class="cs-flex">
-                                    <span class="cs-name" tg-attribute="TGfield_display-name_text-field">Vendor Name</span>
+                                    <span class="cs-name" tg-attribute="TGfield_vendor-name"></span>
                                     <p class="cs-flex-text" tg-attribute = "TGfield_about_text-area"></p>
                                 </div>
                                 <a tg-attribute = "link" href="/users/{user_id}">Go to Vendor Profile</a>
                             </div>        
                         </div>
                     </div>
+                    <div class="cs-image-group">
+                        <picture class="cs-background">
+                            <img tg-attribute = "photo" loading="lazy" decoding="async" src="https://0x61656c.github.io/shopthepl/media/poppy flower-rafiki.png" alt="staff member smiling" width="630" height="680">
+                        </picture>
+                    </div>
                 </div>
-            </div>
+                </div> 
         </section>
+
+        
 
         <footer id="footer">
             <div class="cs-container">
@@ -210,6 +142,5 @@
         </footer>             
 
     <script src="https://0x61656c.github.io/shopthepl/js/main.js"></script> 
-    <script src="slideshow.js"></script>
     </body>
 </html>
