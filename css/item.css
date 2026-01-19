@@ -37,7 +37,7 @@
     /* 320px - 520px */
     height: clamp(20rem, 68vw, 32.5rem);
     /* makes it cover the parent dimensions */
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     display: block;
     position: absolute;
