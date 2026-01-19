@@ -1,0 +1,132 @@
+
+.wrapper { 
+  overflow:hidden;
+}
+
+.wrapper div {
+   padding: 10px;
+}
+#one {
+  float:left; 
+  width:50%;
+}
+#two { 
+  background-color: white;
+  overflow:hidden;
+  margin:10px;
+  min-height:170px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+  }
+  #two {
+    margin-top: 0;
+  }
+  .cs-title {
+    font-size: 2rem;
+  }
+  
+}
+
+
+.item-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: grid;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 9px;
+  margin-top: -50px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: white;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #3D5826;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.item-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+#one .item-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.cs-button-solid {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1145px) {
+  #one {
+    width: 40%;
+  }
+}
