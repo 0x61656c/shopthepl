@@ -57,7 +57,7 @@
   }
   #item-section .cs-small-images {
     overflow-x: scroll;
-    display: flex;
+    display: block;
     /* 16px - 20px */
     gap: clamp(1rem, 1vw, 1.25rem);
     position: relative;
