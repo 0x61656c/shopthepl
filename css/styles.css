@@ -511,7 +511,7 @@ body {
       left: 0;
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
   }
 }
 /* Tablet - 768px */
@@ -824,235 +824,235 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-#featured {
-  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-}
-#featured .cs-container {
-  width: 100%;
-  max-width: 36.5rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* 48px - 64px */
-  gap: clamp(3rem, 6vw, 4rem);
-  position: relative;
-  z-index: 1;
-}
-#featured .cs-content {
-  /* set text align to left if content needs to be left aligned */
-  text-align: center;
-  width: 100%;
-  /* breaks up the parent div so the children are no longer bound by it.  Now the children can be children of the cs-container and allow us to arrange their order with the cs-card-group */
-  display: contents;
-  flex-direction: column;
-  /* centers content horizontally, set to flex-start to left align */
-  align-items: center;
-}
-#featured .cs-title {
-  margin: 0;
-}
-#featured .cs-button-solid {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-  text-align: center;
-  text-decoration: none;
-  min-width: 9.375rem;
-  margin: 1rem 0 0;
-  box-sizing: border-box;
-  padding: 0 1.5rem;
-  color: #fff;
-  background-color: #0c5c92;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  order: 3;
-}
-#featured .cs-button-solid:before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  background: #000;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: width 0.3s;
-}
-#featured .cs-button-solid:hover:before {
-  width: 100%;
-}
-#featured .cs-collection-wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  align-items: stretch;
-  gap: 1rem;
-}
-#featured .cs-item-offer {
-  width: 100%;
-  max-height: 100%;
-  height: auto;
-  background-color: var(--primaryLight);
-  display: flex;
-  flex-direction: column;
-  grid-column: span 12;
-  align-items: flex-start;
-  position: relative;
-  z-index: 1;
-}
-#featured .cs-text-wrapper {
-  /* 40px to 80px top and bottom */
-  /* 24px - 40px left & right */
-  padding: clamp(2.5rem, 8vw, 5rem) clamp(1.5rem, 4vw, 2.5rem);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  z-index: 1;
-}
-#featured .cs-card-group {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  position: relative;
-  /* Mobile view - single column layout */
-  grid-template-columns: 1fr;
-  row-gap: 3rem;
-  grid-column: span 12;
-  transform-style: preserve-3d;
-}
-#featured .cs-item {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-bottom: 0;
-}
-#featured .cs-item:hover .cs-picture {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-#featured .cs-item:hover .cs-picture img {
-  transform: scale(1.05);
-}
-
-#featured .cs-h3 {
-  font-size: clamp(1.9375rem, 5vw, 2.4375rem);
-  font-weight: 900;
-  line-height: 1.2em;
-  max-width: 20ch;
-  margin: 0 0 0.25rem;
-  color: #1a1a1a;
-}
-#featured .cs-item-text {
-  font-size: 1rem;
-  line-height: 1.5em;
-  color: #4e4b66;
-  display: block;
-}
-#featured .cs-background {
-  width: 100%;
-  height: clamp(300px, 40vw, 600px);
-  background-color: #e8e7e4;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  z-index: -2;
-}
-#featured .cs-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  transition: opacity 0.3s, transform 0.6s;
-}
-#featured .cs-link {
-  text-decoration: none;
-}
-#featured .cs-image-group {
-  width: 100%;
-  height: 18.75rem;
-  margin-bottom: 1.25rem;
-  position: relative;
-  overflow: hidden;
-}
-#featured .cs-picture {
-  width: 100%;
-  height: 100%;
-  background-color: #f6f6f6;
-  display: block;
-  overflow: hidden;
-  padding: 15px;
-}
-#featured .cs-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transform: scale(1);
-  transition: transform 0.3s;
-}
-#featured .cs-offer {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  padding: 0.375rem;
-  color: #cfecff;
-  background: transparent;
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-}
-#featured .cs-product {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
-  font-weight: 700;
-  line-height: 1.2em;
-  margin: 0;
-  color: #1a1a1a;
-}
-#featured .cs-wrapper {
-  margin-top: 0.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#featured .cs-price {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.2em;
-  color: #0c5c92;
-}
-#featured .cs-old-price {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.2em;
-  text-decoration: line-through;
-  color: #767676;
-}
-#featured .addtocart {
-  font-size: 1rem;
+  #featured {
+    padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
+  #featured .cs-container {
+    width: 100%;
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #featured .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    /* breaks up the parent div so the children are no longer bound by it.  Now the children can be children of the cs-container and allow us to arrange their order with the cs-card-group */
+    display: contents;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #featured .cs-title {
+    margin: 0;
+  }
+  #featured .cs-button-solid {
+    font-size: 1rem;
     font-weight: 700;
-    line-height: clamp(1.875rem, 2.5vw, 3.5rem);
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-align: center;
     text-decoration: none;
+    min-width: 9.375rem;
+    margin: 1rem 0 0;
     box-sizing: border-box;
-    border-radius: 15px;
-    padding: 0 0.5rem;
+    padding: 0 1.5rem;
     color: #fff;
     background-color: #0c5c92;
     display: inline-block;
     position: relative;
-}
+    z-index: 1;
+    order: 3;
+  }
+  #featured .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #featured .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #featured .cs-collection-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: stretch;
+    gap: 1rem;
+  }
+  #featured .cs-item-offer {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    background-color: var(--primaryLight);
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  #featured .cs-text-wrapper {
+    /* 40px to 80px top and bottom */
+    /* 24px - 40px left & right */
+    padding: clamp(2.5rem, 8vw, 5rem) clamp(1.5rem, 4vw, 2.5rem);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  #featured .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    position: relative;
+    /* Mobile view - single column layout */
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    grid-column: span 12;
+    transform-style: preserve-3d;
+  }
+  #featured .cs-item {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+  }
+  #featured .cs-item:hover .cs-picture {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  #featured .cs-item:hover .cs-picture img {
+    transform: scale(1.05);
+  }
+
+  #featured .cs-h3 {
+    font-size: clamp(1.9375rem, 5vw, 2.4375rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    max-width: 20ch;
+    margin: 0 0 0.25rem;
+    color: #1a1a1a;
+  }
+  #featured .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #4e4b66;
+    display: block;
+  }
+  #featured .cs-background {
+    width: 100%;
+    height: clamp(300px, 40vw, 600px);
+    background-color: #e8e7e4;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: -2;
+  }
+  #featured .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.3s, transform 0.6s;
+  }
+  #featured .cs-link {
+    text-decoration: none;
+  }
+  #featured .cs-image-group {
+    width: 100%;
+    height: 18.75rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+  #featured .cs-picture {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+  }
+  #featured .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+  #featured .cs-offer {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding: 0.375rem;
+    color: #cfecff;
+    background: transparent;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+  #featured .cs-product {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    color: #1a1a1a;
+  }
+  #featured .cs-wrapper {
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #featured .cs-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #0c5c92;
+  }
+  #featured .cs-old-price {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-decoration: line-through;
+    color: #767676;
+  }
+  #featured .addtocart,#services-562 .addtocart {
+    font-size: 1rem;
+      font-weight: 700;
+      line-height: clamp(1.875rem, 2.5vw, 3.5rem);
+      text-align: center;
+      text-decoration: none;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 0 0.5rem;
+      color: #fff;
+      background-color: #0c5c92;
+      display: inline-block;
+      position: relative;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
