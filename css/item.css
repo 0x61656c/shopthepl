@@ -51,9 +51,9 @@
   #item-section .cs-large-image img {
     width: 100%;
     height: 100%;
-    /* makes it cover the parent like a background image */
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+    background-color: #cfecff47;
   }
   #item-section .cs-small-images {
     overflow-x: scroll;
@@ -223,9 +223,14 @@
   #item-section .cs-product-info {
     /* 20px - 60px */
     padding: clamp(1.25rem, 3vw, 3.75rem) 0;
+    text-align: center;
+    width: 100%;
   }
   #item-section .cs-button-solid {
     flex-grow: 1;
+  }
+  #item-section .cs-button-group {
+    flex-direction: column;
   }
 }
                                 
