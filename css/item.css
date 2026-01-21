@@ -62,6 +62,7 @@
     gap: clamp(1rem, 1vw, 1.25rem);
     position: relative;
     z-index: 10;
+    margin: auto;
   }
   #item-section .cs-thumbnail {
     /* 100px - 120px */
