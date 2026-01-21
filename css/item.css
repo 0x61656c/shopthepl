@@ -97,11 +97,16 @@
     font-weight: 700;
   }
   #item-section .cs-h3 {
-    font-size: var(--headerFontSize);
+    font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
     font-weight: 900;
     line-height: 1.2em;
-    margin: 0 0 1.5rem;
-    color: var(--headerColor);
+    text-align: center;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: #1a1a1a;
+    position: relative;
+    font-family: 'MuseoModerno', sans-serif;
+    text-shadow: 5px 3px var(--primaryLight);
   }
   #item-section .cs-price {
     /* 39px - 49px */
