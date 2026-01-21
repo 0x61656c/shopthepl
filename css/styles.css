@@ -629,7 +629,191 @@ body {
   }
 }
 
+/*-- -------------------------- -->
+<---         Collection         -->
+<--- -------------------------- -*/
 
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #collection-2461 {
+    padding: var(--sectionPadding);
+  }
+  #collection-2461 .cs-container {
+    width: 100%;
+    /* switches to 1280px at tablet */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #collection-2461 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #collection-2461 .cs-title {
+    max-width: 24ch;
+    margin: 0;
+  }
+  #collection-2461 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #collection-2461 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #collection-2461 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #collection-2461 .cs-card-group {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+  }
+  #collection-2461 .cs-item {
+    text-align: center;
+    height: fit-content;
+    padding: 0.75rem 0.75rem 1.5rem;
+    grid-column: span 12;
+    position: relative;
+    z-index: 1;
+  }
+  #collection-2461 .cs-item:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--secondary);
+    opacity: 0.05;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #collection-2461 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #collection-2461 .cs-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #collection-2461 .cs-h3 {
+    /* 20px - 25px */
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    color: var(--headerColor);
+    display: block;
+    display: -webkit-box;
+    transition: color 0.3s;
+  }
+  #collection-2461 .cs-image-group {
+    width: 100%;
+    height: 17.5625rem;
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  #collection-2461 .cs-icon-wrapper {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--secondary);
+    opacity: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+  }
+  #collection-2461 .cs-picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    transition: filter 0.3s;
+  }
+  #collection-2461 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #collection-2461 .cs-container {
+    max-width: 80rem;
+  }
+  #collection-2461 .cs-card-group {
+    align-items: stretch;
+  }
+  #collection-2461 .cs-item {
+    height: auto;
+    grid-column: span 6;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #collection-2461 .cs-item {
+    grid-column: span 3;
+  }
+  #collection-2461 .cs-item:hover .cs-icon-wrapper {
+    opacity: 1;
+  }
+  #collection-2461 .cs-item:hover .cs-picture {
+    filter: blur(8px);
+  }
+}
+                                
 /*-- -------------------------- -->
 <---       How it works         -->
 <--- -------------------------- -*/
