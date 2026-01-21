@@ -63,6 +63,7 @@
     position: relative;
     z-index: 10;
     margin: auto;
+    text-align: center;
   }
   #item-section .cs-thumbnail {
     /* 100px - 120px */
@@ -202,6 +203,7 @@
   #item-section .cs-small-images {
     overflow: initial;
     flex-direction: column;
+    display: flex
   }
   #item-section .cs-button-group {
     flex-direction: row;
