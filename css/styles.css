@@ -759,7 +759,7 @@ body {
   #collection-2461 .cs-icon-wrapper {
     width: 4.5rem;
     height: 4.5rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     opacity: 0;
     border-radius: 50%;
     display: flex;
@@ -782,7 +782,7 @@ body {
   #collection-2461 .cs-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
