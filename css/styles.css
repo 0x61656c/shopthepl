@@ -298,8 +298,8 @@ body {
     font-size: clamp(1.5rem, 2vw, 1.25rem);
     max-width: 55ch;
     margin-bottom: 2rem;
-    opacity: 0.8;
     font-weight: 500;
+    color: var(--primary);
   }
   #hero-2149 .cs-button-solid {
     font-size: 1rem;
@@ -363,12 +363,12 @@ body {
     z-index: 1;
   }
   #hero-2149 .cs-background img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: fill;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10%;
   }
 }
                                 
@@ -824,7 +824,8 @@ body {
   right: 0;
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
-  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);}
+  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
+}
 
 #collection-2461 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
