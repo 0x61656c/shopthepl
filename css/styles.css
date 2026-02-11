@@ -824,8 +824,7 @@ body {
   right: 0;
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
-  font-size: 3rem;
-}
+  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);}
 
 #collection-2461 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
@@ -834,9 +833,7 @@ body {
 #collection-2461 .animated-item:nth-child(3n+3) {
   animation-delay: 4s;
 }
-#collection-2461 .animated-item:nth-child(4n+4) {
-  animation-delay: 6s;
-}
+
 
 @keyframes BottomTotop {
   0% {
