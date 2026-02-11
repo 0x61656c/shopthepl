@@ -370,67 +370,6 @@ body {
     top: 0;
     left: 10%;
   }
-
-#hero-2149 .animated-info {
-  display: flex;
-  vertical-align: top;
-  min-width: 250px;
-  position: relative;
-  margin-bottom: 15%;
-}
-
-#hero-2149 .animated-item {
-  color: var(--primary-color);
-}
-
-#hero-2149 .animated-item {
-  display: block;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
-  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
-}
-
-#hero-2149 .animated-item:nth-child(2n+2) {
-  animation-delay: 2s;
-}
-
-#hero-2149 .animated-item:nth-child(3n+3) {
-  animation-delay: 4s;
-}
-
-
-@keyframes BottomTotop {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 }
                                 
 .shape-divider {
@@ -864,6 +803,66 @@ body {
   }
 }
 
+#collection-2461 .animated-info {
+  display: flex;
+  vertical-align: top;
+  min-width: 250px;
+  position: relative;
+  margin-bottom: 15%;
+}
+
+#collection-2461 .animated-item {
+  color: var(--primary-color);
+}
+
+#collection-2461 .animated-item {
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
+}
+
+#collection-2461 .animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+
+#collection-2461 .animated-item:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #collection-2461 .cs-container {
