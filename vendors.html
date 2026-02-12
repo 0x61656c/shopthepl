@@ -37,5 +37,49 @@
         <!-- ============================================ -->
     <body>
 
+        <!-- ============================================ -->
+        <!--            Vendors                           -->
+        <!-- ============================================ -->
+
+        <section id="all-vendors">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h1 class="cs-title">All Vendors</h1>
+                </div>
+                <div class="cs-collection-wrapper">
+                    <ul class="cs-card-group" tg-section-id = "TGsection_all-vendors">
+                        <li class="cs-item" tg-import-type = "user">
+                            <a tg-attribute = "link" href="/users/{user_id}" class="cs-link">
+                                <div class="cs-image-group">
+                                    <picture class="cs-picture">
+                                        <img loading="lazy" decoding="async" tg-attribute = "avatar" alt="vendor image" width="1280" height="568">
+                                    </picture>
+                                    <a class="cs-heart" tg-attribute="link" href="https://shop-the-pl.tangram.co/users/{user_id}/add_to_collection/11abcccf4078bf7dcb57"><img src="https://0x61656c.github.io/shopthepl/media/blueheart.png" width="30"></a>
+                                </div>
+                                <div class="cs-details">
+                                    <h3 class="cs-vendor" tg-attribute = "TGfield_vendor-name"></h3>
+                                    <div class="cs-wrapper">
+                                        <div class="cs-flex">
+                                            <span class="cs-city" tg-attribute = "city">, <span class="cs-state" tg-attribute = "TGfield_state_text-field">
+                                            </span> </span>
+                                            <br>
+                                            <span class="cs-text" tg-attribute = "TGfield_about_text-area"></span></span>
+                                            <!-- <br><span class="cs-text" tg-attribute = "TGfield_about_text-area"></span> -->
+                                            <br>
+                                            <!-- <div style="text-align: center;">
+                                                <a tg-attribute = "link" href="/listings/{listing_id}/new_transaction" class="addtocart" >
+                                                    Add To Cart
+                                                </a>
+    
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
