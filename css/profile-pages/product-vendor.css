@@ -183,11 +183,11 @@
 #details h2 {
   text-align: center;
 }
-.column {
+/* .column {
   float: left;
   width: 25%;
   height: 150px;
-}
+} */
 
 /* Clear floats after the columns */
 .row:after {
