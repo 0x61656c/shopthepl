@@ -1299,7 +1299,7 @@ body {
     text-decoration: line-through;
     color: #767676;
   }
-  #featured .addtocart,#services-562 .addtocart {
+  #featured .addtocart,#services-562 .addtocart, #all-products .addtocart {
     font-size: 1rem;
       font-weight: 700;
       line-height: clamp(1.875rem, 2.5vw, 3.5rem);
