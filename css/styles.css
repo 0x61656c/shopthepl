@@ -265,7 +265,7 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-  }
+    background-image: linear-gradient(to bottom right, white, var(--primaryLight));  }
   #hero-2149 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -396,8 +396,8 @@ body {
 @media only screen and (min-width: 0rem) {
   #services-562 {
       padding: var(--sectionPadding);
-      background-color: var(--primaryLight);
-  }
+      background-image: linear-gradient(to bottom left, white, var(--primaryLight));
+      }
   #services-562 .cs-container {
       width: 100%;
       /* changes to 1280px at tablet */
@@ -888,194 +888,7 @@ body {
   #collection-2461 .cs-item:hover .cs-picture {
     filter: blur(8px);
   }
-}
-                                
-/*-- -------------------------- -->
-<---       How it works         -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #howitworks {
-    padding: var(--sectionPadding);
-    position: relative;
-  }
-  #howitworks .cs-container {
-    /* changes to 1440px at tablet */
-    max-width: 34.375rem;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #howitworks .cs-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* set text align to center if content needs to be centrally aligned */
-    text-align: left;
-  }
-  #howitworks .cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    max-width: 21.875rem;
-    width: 100%;
-    margin: 0;
-    color: var(--bodyTextColor);
-    text-align: inherit;
-  }
-  #howitworks .cs-text {
-    max-width: 39.375rem;
-  }
-  #howitworks .cs-card-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
-  }
-  #howitworks .cs-item {
-    list-style: none;
-    background-color: #fff;
-    grid-column: span 12;
-    position: relative;
-    z-index: 1;
-    transition: box-shadow 0.3s, transform 0.3s;
-  }
-  #howitworks .cs-item:hover {
-    transform: translateY(-0.4375rem);
-  }
-  #howitworks .cs-item:hover .cs-picture img {
-    opacity: 0.3;
-    transform: scale(1.1);
-  }
-  #howitworks .cs-item:hover .cs-h3 {
-    color: var(--primaryLight);
-  }
-
-  #howitworks .cs-link {
-    text-decoration: none;
-    display: block;
-  }
-  #howitworks .cs-picture {
-    width: 100%;
-    height: 9.375rem;
-    margin: 0 0 0.75rem 0;
-    background-color: var(--primaryLight);
-    border-radius: 0.625rem;
-    display: block;
-    position: relative;
-    z-index: 10;
-    /* clips the img tag corners */
-    overflow: hidden;
-  }
-  #howitworks .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.6s, opacity 0.3s;
-  }
-  #howitworks .cs-number {
-    font-size: 1.25rem;
-    font-weight: bold;
-    width: 2.25rem;
-    height: 2.25rem;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
-  #howitworks .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.2vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    word-break: break-all;
-    margin: 0 0 0.75rem 0;
-    color: var(--headerColor);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.75rem;
-    transition: color 0.3s;
-  }
-  #howitworks .cs-item-text {
-    /* 14px - 16px  */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #howitworks .cs-background {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 25%;
-    width: 100%;
-    opacity: 0.5;
-  }
-  #howitworks .cs-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #howitworks .cs-container {
-    max-width: 90rem;
-    gap: 6.25rem;
-  }
-  #howitworks .cs-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  #howitworks .cs-item {
-    grid-column: span 3;
-  }
-  #howitworks .cs-item::after {
-    width: 7.5rem;
-    height: 1.75rem;
-    margin: 0;
-    background-image: url(https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/arrow-orange-large.svg);
-    position: absolute;
-    bottom: -2.5rem;
-    left: clamp(8.5rem, 18vw, 18.5rem);
-  }
-  #howitworks .cs-item:nth-of-type(2)::after {
-    top: -3.75rem;
-    transform: rotateX(180deg);
-  }
-  #howitworks .cs-background {
-    top: 0;
-    left: auto;
-    right: 50%;
-    /* 90px - 225px */
-    margin-right: clamp(5.625rem, 15vw, 14.0625rem);
-    height: 50%;
-    width: 50vw;
-  }
-}
-                                
+}                                                    
 
                                                             
 /*-- -------------------------- -->
