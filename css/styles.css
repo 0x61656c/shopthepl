@@ -515,10 +515,10 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #collection-2461 {
+  #landing {
     padding: var(--sectionPadding);
   }
-  #collection-2461 .cs-container {
+  #landing .cs-container {
     width: 100%;
     /* switches to 1280px at tablet */
     margin: auto;
@@ -528,17 +528,17 @@ body {
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #collection-2461 .cs-content {
+  #landing .cs-content {
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #collection-2461 .cs-title {
+  #landing .cs-title {
     margin: 0;
   }
-  #collection-2461 .cs-button-solid {
+  #landing .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -557,7 +557,7 @@ body {
     position: relative;
     z-index: 1;
   }
-  #collection-2461 .cs-button-solid:before {
+  #landing .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -570,10 +570,10 @@ body {
     z-index: -1;
     transition: width 0.3s;
   }
-  #collection-2461 .cs-button-solid:hover:before {
+  #landing .cs-button-solid:hover:before {
     width: 100%;
   }
-  #collection-2461 .cs-card-group {
+  #landing .cs-card-group {
     list-style: none;
     width: 100%;
     margin: 0;
@@ -584,7 +584,7 @@ body {
     column-gap: 1.25rem;
     row-gap: 1.25rem;
   }
-  #collection-2461 .cs-item {
+  #landing .cs-item {
     text-align: center;
     height: fit-content;
     padding: 0.75rem 0.75rem 1.5rem;
@@ -592,7 +592,7 @@ body {
     position: relative;
     z-index: 1;
   }
-  #collection-2461 .cs-item:before {
+  #landing .cs-item:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -604,17 +604,17 @@ body {
     left: 0;
     z-index: -1;
   }
-  #collection-2461 .cs-item:hover .cs-h3 {
+  #landing .cs-item:hover .cs-h3 {
     color: var(--primary);
   }
-  #collection-2461 .cs-link {
+  #landing .cs-link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  #collection-2461 .cs-h3 {
+  #landing .cs-h3 {
     /* 20px - 25px */
     font-size: 1.25rem;
     font-weight: 700;
@@ -627,14 +627,14 @@ body {
     display: -webkit-box;
     transition: color 0.3s;
   }
-  #collection-2461 .cs-image-group {
+  #landing .cs-image-group {
     width: 100%;
     height: 17.5625rem;
     overflow: hidden;
     display: block;
     position: relative;
   }
-  #collection-2461 .cs-icon-wrapper {
+  #landing .cs-icon-wrapper {
     width: 4.5rem;
     height: 4.5rem;
     background-color: var(--primary);
@@ -649,7 +649,7 @@ body {
     transform: translate(-50%, -50%);
     transition: opacity 0.3s;
   }
-  #collection-2461 .cs-picture {
+  #landing .cs-picture {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -657,7 +657,7 @@ body {
     position: absolute;
     transition: filter 0.3s;
   }
-  #collection-2461 .cs-picture img {
+  #landing .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -667,19 +667,19 @@ body {
   }
 }
 
-#collection-2461 .animated-info {
+#landing .animated-info {
   display: flex;
   vertical-align: top;
   min-width: 250px;
   position: relative;
-  margin-bottom: 15%;
+  margin-bottom: 100px;
 }
 
-#collection-2461 .animated-item {
+#landing .animated-item {
   color: var(--primary-color);
 }
 
-#collection-2461 .animated-item {
+#landing .animated-item {
   display: block;
   opacity: 0;
   overflow: hidden;
@@ -691,11 +691,11 @@ body {
   font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
 }
 
-#collection-2461 .animated-item:nth-child(2n+2) {
+#landing .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
 }
 
-#collection-2461 .animated-item:nth-child(3n+3) {
+#landing .animated-item:nth-child(3n+3) {
   animation-delay: 4s;
 }
 
@@ -729,26 +729,26 @@ body {
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #collection-2461 .cs-container {
+  #landing .cs-container {
     max-width: 80rem;
   }
-  #collection-2461 .cs-card-group {
+  #landing .cs-card-group {
     align-items: stretch;
   }
-  #collection-2461 .cs-item {
+  #landing .cs-item {
     height: auto;
     grid-column: span 6;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #collection-2461 .cs-item {
+  #landing .cs-item {
     grid-column: span 3;
   }
-  #collection-2461 .cs-item:hover .cs-icon-wrapper {
+  #landing .cs-item:hover .cs-icon-wrapper {
     opacity: 1;
   }
-  #collection-2461 .cs-item:hover .cs-picture {
+  #landing .cs-item:hover .cs-picture {
     filter: blur(8px);
   }
 }                                                    
