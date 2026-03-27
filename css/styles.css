@@ -518,7 +518,7 @@ body {
 @media only screen and (min-width: 0rem) {
   #landing {
     padding: var(--sectionPadding);
-    background-color: #ecf2f4;
+    background-color: #e0e6e9;
   }
   #landing .cs-container {
     width: 100%;
