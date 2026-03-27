@@ -44,7 +44,7 @@ body {
 }
 
 .cs-title {
-  font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
+  font-size: clamp(2.25rem, 3.5vw, 3.0625rem);
   font-weight: 900;
   line-height: 1.2em;
   text-align: center;
@@ -511,7 +511,7 @@ body {
 }
 
 /*-- -------------------------- -->
-<---         Collection         -->
+<---         Landing            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -701,6 +701,10 @@ body {
   animation-delay: 4s;
 }
 
+#landing .shape {
+  height: 200px;
+  width: 100%;
+}
 
 @keyframes BottomTotop {
   0% {
