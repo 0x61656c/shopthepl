@@ -113,7 +113,8 @@ body {
 .top-banner {
   height: 50px;
   text-align: center;
-  background-color: var(--primaryLight) ;
+  background-color: var(--primary) ;
+  color: white;
 }
 .top-banner span {
   margin-top: 16px;
@@ -517,6 +518,7 @@ body {
 @media only screen and (min-width: 0rem) {
   #landing {
     padding: var(--sectionPadding);
+    background-color: #ecf2f4;
   }
   #landing .cs-container {
     width: 100%;
