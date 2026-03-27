@@ -107,6 +107,7 @@
     position: relative;
     font-family: 'MuseoModerno', sans-serif;
     text-shadow: 5px 3px var(--primaryLight);
+    margin: auto;
   }
   #item-section .cs-price {
     /* 39px - 49px */
@@ -455,6 +456,10 @@
   #vendor-section .cs-container {
     margin: auto;
     text-align: center;
+  }
+
+  #vendor-section .cs-text {
+    margin: auto;
   }
   
   
