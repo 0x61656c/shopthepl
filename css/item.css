@@ -202,10 +202,12 @@
   #item-section .cs-product-info {
     text-align: center;
   }
-
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #item-section .cs-picture-group {
+    flex-direction: row;
+  }
   #item-section .cs-small-images {
     overflow: initial;
     flex-direction: column;
