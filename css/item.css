@@ -96,7 +96,7 @@
   #item-section .cs-info-item .cs-bold {
     font-weight: 700;
   }
-  #item-section .cs-h3 {
+  #item-section .cs-h3, #vendor-section .cs-h3 {
     font-size: clamp(2.25rem, 3.9vw, 3.0625rem);
     font-weight: 900;
     line-height: 1.2em;
@@ -447,7 +447,15 @@
       min-height: 42.5rem;
     }
   }
-                   
+                
+  #vendor-section {
+    text-align: center;
+  }
+
+  #vendor-section .cs-container {
+    margin: auto;
+    text-align: center;
+  }
   
   
   
