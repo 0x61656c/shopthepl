@@ -1638,6 +1638,10 @@ body {
   max-width: 16.25rem;
   height: auto;
 }
+
+#footer .cs-logo-img {
+  filter: invert(1);
+}
 #footer .cs-text {
   color: #fafbfc;
   opacity: 0.8;
