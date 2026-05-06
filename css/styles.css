@@ -1170,11 +1170,11 @@ body {
     width: 100%;
   }
   #cta-2400 .cs-graphic {
-    width: 100%;
     /* changes to 914px at tablet */
-    max-width: 28.5625rem;
+    max-width: 30rem;
     height: auto;
     display: block;
+    border-radius: 23%;
   }
 }
 /* Tablet - 768px */
@@ -1198,11 +1198,11 @@ body {
     transform: translateY(-50%);
   }
   #cta-2400 .cs-graphic {
-    width: 50vw;
+    width: 30vw;
     max-width: 57.125rem;
     max-height: 100%;
     position: relative;
-    left: 50%;
+    left: 60%;
     z-index: 1;
   }
 }
