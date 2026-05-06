@@ -1073,7 +1073,7 @@ body {
 @media only screen and (min-width: 0rem) {
   #cta-2400 {
     padding: var(--sectionPadding);
-    background-color: #191005;
+    background-color: var(--primary);
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -1121,6 +1121,7 @@ body {
     color: var(--bodyTextColorWhite);
     position: relative;
     z-index: 1;
+    text-shadow: none;
   }
   #cta-2400 .cs-text {
     max-width: 28.5625rem;
