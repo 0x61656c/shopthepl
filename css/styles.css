@@ -67,23 +67,27 @@ body {
   color: #4e4b66;
 }
 .cs-button-solid {
-  font-size: 1rem;
-  font-weight: 700;
-  /* 46px - 56px */
-  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-  text-align: center;
-  text-decoration: none;
-  min-width: 9.375rem;
-  margin: 0;
-  margin-top: 2rem;
-  /* prevents padding from adding to the width */
-  box-sizing: border-box;
-  padding: 0 1.5rem;
-  color: #fff;
-  background-color: #0c5c92;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
+  --gradientmix: 
+  color-mix(in lab, var(--primary), black 49%);
+         font-size: 1rem;
+         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+         text-decoration: none;
+         font-weight: 700;
+         text-align: center;
+         color: #fff;
+         white-space: nowrap;
+         margin: 0;
+         min-width: 9.375rem;
+         padding: 0 1.75rem;
+         background-color: var(--primary);
+         background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, var(--gradientmix) 99%);
+         background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, var(--gradientmix) 99%);
+         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--gradientmix) 99%);
+         border-radius: .25rem;
+         overflow: hidden;
+         display: inline-block;
+         position: relative;
+         z-index: 1;
 }
 
 .cs-button-small {
@@ -541,23 +545,27 @@ body {
     margin: 0;
   }
   #landing .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: #fff;
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+    --gradientmix: 
+    color-mix(in lab, var(--primary), black 49%);
+           font-size: 1rem;
+           line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+           text-decoration: none;
+           font-weight: 700;
+           text-align: center;
+           color: #fff;
+           white-space: nowrap;
+           margin: 0;
+           min-width: 9.375rem;
+           padding: 0 1.75rem;
+           background-color: var(--primary);
+           background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, var(--gradientmix) 99%);
+           background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, var(--gradientmix) 99%);
+           background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--gradientmix) 99%);
+           border-radius: 6.25rem;
+           overflow: hidden;
+           display: inline-block;
+           position: relative;
+           z-index: 1;
   }
   #landing .cs-button-solid:before {
     content: "";
